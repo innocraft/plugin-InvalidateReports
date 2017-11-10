@@ -13,5 +13,32 @@ namespace Piwik\Plugins\InvalidateReports;
  */
 class InvalidateReports extends \Piwik\Plugin
 {
+    /**
+     * @see Piwik_Plugin::getListHooksRegistered
+     */
+    public function getListHooksRegistered()
+    {
+        return array(
+            'AssetManager.getJavaScriptFiles'  => 'getJsFiles',
+            'AssetManager.getStylesheetFiles'  => 'getStylesheetFiles',
+        );
+    }
+
+    /**
+     * Adds required JS files
+     * @param $jsFiles
+     */
+    public function getJsFiles(&$jsFiles)
+    {
+    }
+
+    /**
+     * Adds required CSS files
+     * @param $stylesheets
+     */
+    public function getStylesheetFiles(&$stylesheets)
+    {
+        $stylesheets[] = "plugins/InvalidateReports/stylesheets/styles.less";
+    }
 
 }

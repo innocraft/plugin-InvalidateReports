@@ -4,8 +4,17 @@
 
 {% block content %}
 
-<div piwik-content-block content-title="{{ title|e('html_attr') }}">
-    
+<div piwik-content-block content-title="{{ title|e('html_attr') }}" class="invalidate-reports-page">
+
+    <p>{{ 'InvalidateReports_PageDescription'|translate }}</p>
+
+    <ul>
+        <li>{{ 'InvalidateReports_ExamplesCustomReports'|translate }}</li>
+        <li>{{ 'InvalidateReports_ExamplesFunnels'|translate }}</li>
+        <li>{{ 'InvalidateReports_ExamplesRawData'|translate }}</li>
+    </ul>
+
+
 </div>
 
 {% endblock %}
