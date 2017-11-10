@@ -1,0 +1,24 @@
+{
+  "name": "InvalidateReports",
+  "version": "0.1.0",
+  "description": "This plugin allows you to invalidate historical reports from within the UI",
+  "keywords": ["reports", "invalidate"],
+  "license": "GPL v3+",
+  "homepage": "https:\/\/piwik.org",
+  "require": {
+    "piwik": ">=3.0.0-b1,<4.0.0-b1"
+  },
+  "support": {
+    "issues": "https://github.com/piwik/plugin-InvalidateReports/issues",
+    "forum": "https://forum.piwik.org",
+    "source": "https://github.com/piwik/plugin-InvalidateReports",
+    "wiki": "https://github.com/piwik/plugin-InvalidateReports/wiki"
+  },
+  "authors": [
+    {
+      "name": "Piwik",
+      "email": "hello@piwik.org",
+      "homepage": "http:\/\/piwik.org"
+    }
+  ]
+}
