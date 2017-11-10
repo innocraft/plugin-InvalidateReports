@@ -7,6 +7,8 @@
  *
  */
 namespace Piwik\Plugins\InvalidateReports;
+use Piwik\Piwik;
+use Piwik\View;
 
 /**
  *
@@ -15,6 +17,11 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
 {
     public function index()
     {
+        Piwik::checkUserHasSuperUserAccess();
 
+        $view = new View('@InvalidateReports/admin');
+        $this->setBasicVariablesView($view);
+
+        return $view->render();
     }
 }

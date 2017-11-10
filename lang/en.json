@@ -1,5 +1,6 @@
 {
   "InvalidateReports": {
-    "InvalidateReports": "Invalidate reports"
+    "InvalidateReports": "Invalidate reports",
+    "InvalidateHistoricalReports": "Invalidate historical reports"
   }
 }
