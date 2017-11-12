@@ -5,6 +5,13 @@
     "PageDescription": "You can invalidate all historical reports for a specific website, or for all websites, by clicking the button \"Invalidate historical reports\". When you invalidate historical reports, they will be re-processed from the raw logs the next time archiving will run. This is useful when you want to force Piwik to re-process historical data for all reports, for example when:",
     "ExamplesCustomReports": "you created a new Custom Report and want the Custom Reports to be processed for all historical data",
     "ExamplesFunnels": "you created a new Funnel and want your Funnel reports to be processed for all historical data",
-    "ExamplesRawData": "you have modified the raw visitor information (for example by importing new visitor logs in the past) and want these changes to raw logs reflected in all your reports."
+    "ExamplesRawData": "you have modified the raw visitor information (for example by importing new visitor logs in the past) and want these changes to raw logs reflected in all your reports.",
+    "AllWebsites": "all websites",
+    "AllSegments": "all segments",
+    "ChooseSegment": "Choose segment",
+    "ChooseWebsite": "Choose website",
+    "InvalidationSuccess": "Reports have been successfully invalidated. These reports will be reprocessed the next time reports archiving will run.",
+    "InvalidateAPIReturn": "The CoreAdminHome.invalidateArchivedReports API returned:",
+    "ConfirmInvalidation": "You are about to invalidate all historical reports, which will cause Piwik to re-process all historical reports the next time archiving run. Re-processing all historical reports may take a long time. Are you sure you want to invalidate all historical reports for %1$s and %2$s?"
   }
 }

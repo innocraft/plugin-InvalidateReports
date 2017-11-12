@@ -19,8 +19,9 @@ class InvalidateReports extends \Piwik\Plugin
     public function getListHooksRegistered()
     {
         return array(
-            'AssetManager.getJavaScriptFiles'  => 'getJsFiles',
-            'AssetManager.getStylesheetFiles'  => 'getStylesheetFiles',
+            'AssetManager.getJavaScriptFiles' => 'getJsFiles',
+            'AssetManager.getStylesheetFiles' => 'getStylesheetFiles',
+            'Translate.getClientSideTranslationKeys' => 'getClientSideTranslationKeys'
         );
     }
 
@@ -30,6 +31,7 @@ class InvalidateReports extends \Piwik\Plugin
      */
     public function getJsFiles(&$jsFiles)
     {
+        $jsFiles[] = "plugins/InvalidateReports/javascripts/invalidatereports.controller.js";
     }
 
     /**
@@ -41,4 +43,14 @@ class InvalidateReports extends \Piwik\Plugin
         $stylesheets[] = "plugins/InvalidateReports/stylesheets/styles.less";
     }
 
+    /**
+     * Adds translation keys required in JS
+     * @param $translationKeys
+     */
+    public function getClientSideTranslationKeys(&$translationKeys)
+    {
+        $translationKeys[] = "InvalidateReports_AllSegments";
+        $translationKeys[] = "InvalidateReports_InvalidationSuccess";
+        $translationKeys[] = "InvalidateReports_InvalidateAPIReturn";
+    }
 }
