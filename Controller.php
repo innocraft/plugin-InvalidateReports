@@ -54,7 +54,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         $dates = [];
         list($minDate, $maxDate) = Site::getMinMaxDateAcrossWebsites($siteIds);
 
-        $range = new Range('day', $minDate->toString().','.'today');
+        $range = new Range('day', $minDate->toString().','.$maxDate->toString());
 
         foreach ($range->getSubperiods() as $subPeriod) {
             $dates[] = $subPeriod->getDateStart();
