@@ -1,9 +1,7 @@
 /*!
- * Piwik - free/libre analytics platform
+ * InnoCraft - the company of the makers of Piwik Analytics, the free/libre analytics platform
  *
- * Screenshot tests for ReferrersManager plugin
- *
- * @link http://piwik.org
+ * @link https://www.innocraft.com
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
 
