@@ -62,6 +62,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         return Request::processRequest('CoreAdminHome.invalidateArchivedReports', [
                 'format' => 'json',
                 'idSites' => $siteIds,
+                'period' => false,
                 'dates' =>  implode(',',$dates),
                 'segment' => $segment
         ]);
