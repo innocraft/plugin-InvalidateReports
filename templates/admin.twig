@@ -15,9 +15,9 @@
     <p>{{ 'InvalidateReports_PageDescription'|translate }}</p>
 
     <ul id="examples">
-        <li>{{ 'InvalidateReports_ExamplesCustomReports'|translate }}</li>
-        <li>{{ 'InvalidateReports_ExamplesFunnels'|translate }}</li>
-        <li>{{ 'InvalidateReports_ExamplesRawData'|translate }}</li>
+        <li>{{ 'InvalidateReports_ExamplesCustomReports'|translate('<a href="https://piwik.org/docs/custom-reports/" target="_blank">', '</a>')|raw }}</li>
+        <li>{{ 'InvalidateReports_ExamplesFunnels'|translate('<a href="https://piwik.org/docs/funnels/" target="_blank">', '</a>')|raw }}</li>
+        <li>{{ 'InvalidateReports_ExamplesRawData'|translate('<a href="https://piwik.org/log-analytics/" target="_blank">', '</a>')|raw }}</li>
     </ul>
 
     <div ng-controller="InvalidateReportsController">
