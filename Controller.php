@@ -38,7 +38,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         $segments = Request::processRequest('SegmentEditor.getAll');
 
         foreach ($segments as $segment) {
-            $availableSegments[$segment['definition']] = $segment['name'] . ' (' . $segment['definition'] . ')';
+            $availableSegments[$segment['definition']] = Common::unsanitizeInputValue($segment['name']) . ' (' . $segment['definition'] . ')';
         }
 
         return $availableSegments;
