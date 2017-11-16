@@ -1,6 +1,6 @@
 # Piwik Invalidate Reports Plugin
 
-[![Build Status](https://travis-ci.org/piwik/plugin-InvalidateReports.svg?branch=master)](https://travis-ci.org/piwik/plugin-InvalidateReports)
+[![Build Status](https://travis-ci.org/innocraft/plugin-InvalidateReports.svg?branch=master)](https://travis-ci.org/innocraft/plugin-InvalidateReports)
 
 ## Description
 
