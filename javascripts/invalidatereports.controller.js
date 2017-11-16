@@ -37,7 +37,7 @@
 
                 var message = _pk_translate('InvalidateReports_InvalidationSuccess') + '<br />' +
                     _pk_translate('InvalidateReports_InvalidateAPIReturn') + '<br />' +
-                    response;
+                    response.join("<br />").replace("\n", '<br />');
 
                 var UI = require('piwik/UI');
                 var notification = new UI.Notification();
