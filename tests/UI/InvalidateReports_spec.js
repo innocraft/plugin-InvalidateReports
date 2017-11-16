@@ -19,7 +19,7 @@ describe("InvalidateReports", function () {
         }, done);
     });
 
-    it('should load invalidate reports pages', function (done) {
+    it('should show confirmation', function (done) {
         expect.screenshot('confirm').to.be.captureSelector('.modal.open', function (page) {
             page.click('[onconfirm="invalidate()"]');
         }, done);
@@ -30,6 +30,9 @@ describe("InvalidateReports", function () {
             page.evaluate(function(){
                 $('.modal.open a:contains("Yes")').click();
             }, 1000);
+            page.evaluate(function(){
+                $('.notification-success>div').html($('.notification-success>div').html().replace(/, 2012\-01.*/,''));
+            });
         }, done);
     });
 
