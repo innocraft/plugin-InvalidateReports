@@ -27,7 +27,6 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         $view = new View('@InvalidateReports/admin');
         $this->setBasicVariablesView($view);
 
-        $view->availableSegments = $this->getAvailableSegments();
         $view->availableRanges   = $this->getAvailableRanges();
 
         return $view->render();
@@ -41,19 +40,6 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
             12 => Piwik::translate('InvalidateReports_XMonths', 12),
             6  => Piwik::translate('InvalidateReports_XMonths', 6),
         ];
-    }
-
-    protected function getAvailableSegments()
-    {
-        $availableSegments = ['' => Piwik::translate('InvalidateReports_AllSegments')];
-
-        $segments = Request::processRequest('SegmentEditor.getAll');
-
-        foreach ($segments as $segment) {
-            $availableSegments[$segment['definition']] = Common::unsanitizeInputValue($segment['name']) . ' (' . $segment['definition'] . ')';
-        }
-
-        return $availableSegments;
     }
 
     public function invalidateReports()

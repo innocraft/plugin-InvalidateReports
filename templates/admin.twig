@@ -33,6 +33,7 @@
                          class="site-selection select-wrapper"
                          ng-model="site"
                          id="invalidateSite"
+                         ng-change="fetchSegments()"
                          all-sites-text="{{ 'InvalidateReports_AllWebsites'|translate|e('html_attr') }}"
                          all-sites-location="top"
                          switch-site-on-select="false"></div>
@@ -45,7 +46,7 @@
              ng-model="segment"
              title="{{ 'InvalidateReports_ChooseSegment'|translate|e('html_attr') }}"
              value=""
-             options='{{ availableSegments|json_encode }}'>
+             options="availableSegments">
         </div>
 
         <div piwik-field uicontrol="select" name="months"

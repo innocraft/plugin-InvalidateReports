@@ -18,11 +18,35 @@
         };
         $scope.segment = '';
         $scope.months = 0;
+        $scope.availableSegments = {
+            '': _pk_translate('InvalidateReports_AllSegments')
+        };
 
         $scope.invalidate = function () {
             $('#confirmInvalidation .website').html($scope.site.id == 'all' ? $scope.site.name : (_pk_translate('General_Website') + ' ' + $scope.site.name));
-            $('#confirmInvalidation .segment').html($scope.segment ? (_pk_translate('General_Segment') + ' ' + $scope.segment) : _pk_translate('InvalidateReports_AllSegments'));
+            $('#confirmInvalidation .segment').html($scope.segment ? (_pk_translate('General_Segment') + ' ' + $scope.availableSegments[$scope.segment]) : _pk_translate('InvalidateReports_AllSegments'));
             piwikHelper.modalConfirm('#confirmInvalidation', {yes: invalidateReports});
+        };
+
+        $scope.fetchSegments = function() {
+            piwikApi.withTokenInUrl();
+            piwikApi.fetch({
+                method: 'SegmentEditor.getAll',
+                idSite: $scope.site.id != 'all' ? $scope.site.id : ''
+            }).then(function (segments) {
+                var availSegments = {
+                    '': _pk_translate('InvalidateReports_AllSegments')
+                };
+                angular.forEach(segments, function(segment) {
+                    availSegments[segment.definition] = segment.name + ' (' + segment.definition + ')';
+                });
+
+                $scope.availableSegments = availSegments;
+
+                if (!($scope.segment in $scope.availableSegments)) {
+                    $scope.segment = '';
+                }
+            });
         };
 
         function invalidateReports() {
@@ -51,5 +75,7 @@
                 $scope.loading = false;
             });
         }
+
+        $scope.fetchSegments();
     }
 })();
