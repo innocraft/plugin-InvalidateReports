@@ -48,6 +48,13 @@
              options='{{ availableSegments|json_encode }}'>
         </div>
 
+        <div piwik-field uicontrol="select" name="months"
+             ng-model="months"
+             title="{{ 'InvalidateReports_ChooseRange'|translate|e('html_attr') }}"
+             value="0"
+             options="{{ availableRanges|json_encode }}">
+        </div>
+
         <div piwik-save-button
              onconfirm="invalidate()"
              saving="loading"

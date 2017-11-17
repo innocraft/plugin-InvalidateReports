@@ -17,6 +17,7 @@
             name: ''
         };
         $scope.segment = '';
+        $scope.months = 0;
 
         $scope.invalidate = function () {
             $('#confirmInvalidation .website').html($scope.site.id == 'all' ? $scope.site.name : (_pk_translate('General_Website') + ' ' + $scope.site.name));
@@ -32,7 +33,8 @@
                 module: 'InvalidateReports',
                 action: 'invalidateReports',
                 idSites: $scope.site.id,
-                segment: $scope.segment
+                segment: $scope.segment,
+                months: $scope.months
             }).then(function (response) {
 
                 var message = _pk_translate('InvalidateReports_InvalidationSuccess') + '<br />' +

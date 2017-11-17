@@ -2,9 +2,10 @@
 /**
  * InnoCraft - the company of the makers of Piwik Analytics, the free/libre analytics platform
  *
- * @link https://www.innocraft.com
+ * @link    https://www.innocraft.com
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
+
 namespace Piwik\Plugins\InvalidateReports;
 
 use Piwik\API\Request;
@@ -27,8 +28,19 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         $this->setBasicVariablesView($view);
 
         $view->availableSegments = $this->getAvailableSegments();
+        $view->availableRanges   = $this->getAvailableRanges();
 
         return $view->render();
+    }
+
+    protected function getAvailableRanges()
+    {
+        return [
+            0  => Piwik::translate('InvalidateReports_AllData'),
+            24 => Piwik::translate('InvalidateReports_XMonths', 24),
+            12 => Piwik::translate('InvalidateReports_XMonths', 12),
+            6  => Piwik::translate('InvalidateReports_XMonths', 6),
+        ];
     }
 
     protected function getAvailableSegments()
@@ -50,21 +62,26 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
 
         $siteIds = Common::getRequestVar('idSites', '', 'string');
         $segment = Common::getRequestVar('segment', '', 'string');
-        $dates = [];
+        $months  = Common::getRequestVar('months', '', 'string');
+        $dates   = [];
         list($minDate, $maxDate) = Site::getMinMaxDateAcrossWebsites($siteIds);
 
-        $range = new Range('day', $minDate->toString().','.$maxDate->toString());
+        if ($months > 0) {
+            $minDate = $maxDate->subMonth($months);
+        }
+
+        $range = new Range('day', $minDate->toString() . ',' . $maxDate->toString());
 
         foreach ($range->getSubperiods() as $subPeriod) {
             $dates[] = $subPeriod->getDateStart();
         }
 
         return Request::processRequest('CoreAdminHome.invalidateArchivedReports', [
-                'format' => 'json',
-                'idSites' => $siteIds,
-                'period' => false,
-                'dates' =>  implode(',',$dates),
-                'segment' => $segment
+            'format'  => 'json',
+            'idSites' => $siteIds,
+            'period'  => false,
+            'dates'   => implode(',', $dates),
+            'segment' => $segment
         ]);
     }
 }
