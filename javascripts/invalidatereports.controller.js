@@ -32,7 +32,7 @@
             piwikApi.withTokenInUrl();
             piwikApi.fetch({
                 method: 'SegmentEditor.getAll',
-                idSite: $scope.site.id != 'all' ? $scope.site.id : ''
+                idSite: $scope.site.id
             }).then(function (segments) {
                 var availSegments = {
                     '': _pk_translate('InvalidateReports_AllSegments')
