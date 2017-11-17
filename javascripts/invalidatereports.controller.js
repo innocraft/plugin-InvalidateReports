@@ -23,7 +23,7 @@
         };
 
         $scope.invalidate = function () {
-            $('#confirmInvalidation .website').text($scope.site.id == 'all' ? $scope.site.name : (_pk_translate('General_Website') + ' ' + $scope.site.name));
+            $('#confirmInvalidation .website').html($scope.site.id == 'all' ? $scope.site.name : (_pk_translate('General_Website') + ' ' + $scope.site.name));
             $('#confirmInvalidation .segment').text($scope.segment ? (_pk_translate('General_Segment') + ' ' + $scope.availableSegments[$scope.segment]) : _pk_translate('InvalidateReports_AllSegments'));
             piwikHelper.modalConfirm('#confirmInvalidation', {yes: invalidateReports});
         };
