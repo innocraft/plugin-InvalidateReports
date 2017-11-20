@@ -39,6 +39,8 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
             24 => Piwik::translate('InvalidateReports_XMonths', 24),
             12 => Piwik::translate('InvalidateReports_XMonths', 12),
             6  => Piwik::translate('InvalidateReports_XMonths', 6),
+            3  => Piwik::translate('InvalidateReports_XMonths', 3),
+            1  => Piwik::translate('InvalidateReports_XMonths', 1),
         ];
     }
 
