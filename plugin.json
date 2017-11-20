@@ -1,6 +1,6 @@
 {
   "name": "InvalidateReports",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "This plugin allows Super Users to invalidate historical reports in the UI in Administration > System > Invalidate reports.",
   "keywords": ["reports", "invalidate"],
   "license": "GPL v3+",
