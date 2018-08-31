@@ -17,6 +17,9 @@ addons:
       - realpath
       - lftp
 
+git:
+  lfs_skip_smudge: true
+
 # Separate different test suites
 env:
   global:
@@ -37,9 +40,9 @@ matrix:
     - php: 5.5
       env: TEST_SUITE=UITests MYSQL_ADAPTER=PDO_MYSQL TEST_AGAINST_PIWIK_BRANCH=$PIWIK_TEST_TARGET
 
-dist: precise
+dist: trusty
 
-sudo: required
+sudo: false
 
 script: $PIWIK_ROOT_DIR/tests/travis/travis.sh
 
@@ -61,7 +64,7 @@ install:
   - '[ -d ./tests/travis/.git ] || sh -c "rm -rf ./tests/travis && git clone https://github.com/piwik/travis-scripts.git ./tests/travis"'
   - cd ./tests/travis ; git checkout master ; cd ../..
 
-  - export GENERATE_TRAVIS_YML_COMMAND="php ./tests/travis/generator/main.php generate:travis-yml --plugin=\"InvalidateReports\" --verbose"
+  - export GENERATE_TRAVIS_YML_COMMAND="php ./tests/travis/generator/main.php generate:travis-yml --plugin=\"InvalidateReports\" --dist-trusty --sudo-false --verbose"
   - '[[ "$TRAVIS_JOB_NUMBER" != *.1 || "$TRAVIS_PULL_REQUEST" != "false" ]] || ./tests/travis/autoupdate_travis_yml.sh'
 
   - ./tests/travis/checkout_test_against_branch.sh
@@ -93,27 +96,6 @@ before_script:
 
   # make tmpfs and run MySQL on it for reasonnable performance
   - ./tests/travis/setup_mysql_tmpfs.sh
-
-  # print out mysql information
-  - mysql --version
-  - mysql -e "SELECT VERSION();"
-
-  # configure mysql
-  - mysql -e "SET GLOBAL sql_mode = 'NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES'" # Travis default
-  # try to avoid 'mysql has gone away' errors
-  - mysql -e "SET GLOBAL wait_timeout = 36000;"
-  - mysql -e "SET GLOBAL max_allowed_packet = 134209536;"
-  - mysql -e "SHOW VARIABLES LIKE 'max_allowed_packet';"
-  - mysql -e "SHOW VARIABLES LIKE 'wait_timeout';"
-
-  - mysql -e "SELECT @@sql_mode;"
-  # - mysql -e "SHOW GLOBAL VARIABLES;"
-
-  # print out more debugging info
-  - uname -a
-  - date
-  - php -r "var_dump(gd_info());"
-  - mysql -e 'create database piwik_tests;'
 
   - ./tests/travis/prepare.sh
   - ./tests/travis/setup_webserver.sh
