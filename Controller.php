@@ -47,6 +47,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
     public function invalidateReports()
     {
         Piwik::checkUserHasSuperUserAccess();
+        $this->checkTokenInUrl();
 
         $siteIds = Common::getRequestVar('idSites', '', 'string');
         $segment = Common::getRequestVar('segment', '', 'string');
