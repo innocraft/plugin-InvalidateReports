@@ -2,7 +2,7 @@
   "InvalidateReports": {
     "InvalidateReports": "Invalidate reports",
     "InvalidateHistoricalReports": "Invalidate historical reports",
-    "PageDescription": "You can invalidate all historical reports for a specific website, or for all websites, by clicking the button \"Invalidate historical reports\". When you invalidate historical reports, they will be re-processed from the raw logs the next time archiving will run. This is useful when you want to force Piwik to re-process historical data for all reports, for example when:",
+    "PageDescription": "You can invalidate all historical reports for a specific website, or for all websites, by clicking the button \"Invalidate historical reports\". When you invalidate historical reports, they will be re-processed from the raw logs the next time archiving will run. This is useful when you want to force Matomo to re-process historical data for all reports, for example when:",
     "ExamplesCustomReports": "you created a new %1$sCustom Report%2$s and want the %1$sCustom Reports%2$s to be processed for all historical data",
     "ExamplesFunnels": "you created a new %1$sFunnel%2$s and want your %1$sFunnel%2$s reports to be processed for all historical data",
     "ExamplesRawData": "you have modified the raw visitor information (for example by %1$simporting new visitor logs%2$s in the past) and want these changes to raw logs reflected in all your reports.",
@@ -16,6 +16,6 @@
     "LastMonth": "last month",
     "InvalidationSuccess": "Reports have been successfully invalidated. These reports will be reprocessed the next time reports archiving will run.",
     "InvalidateAPIReturn": "The CoreAdminHome.invalidateArchivedReports API returned:",
-    "ConfirmInvalidation": "You are about to invalidate all historical reports, which will cause Piwik to re-process all historical reports the next time archiving runs. Re-processing all historical reports may take a long time the next time archiving runs. Are you sure you want to invalidate all historical reports for %1$s and %2$s?"
+    "ConfirmInvalidation": "You are about to invalidate all historical reports, which will cause Matomo to re-process all historical reports the next time archiving runs. Re-processing all historical reports may take a long time the next time archiving runs. Are you sure you want to invalidate all historical reports for %1$s and %2$s?"
   }
 }
