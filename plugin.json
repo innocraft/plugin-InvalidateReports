@@ -1,12 +1,12 @@
 {
   "name": "InvalidateReports",
-  "version": "0.1.2",
+  "version": "4.0.0",
   "description": "This plugin allows Super Users to invalidate historical reports in the UI in Administration > System > Invalidate reports.",
   "keywords": ["reports", "invalidate"],
   "license": "GPL v3+",
   "homepage": "https://www.innocraft.com",
   "require": {
-    "piwik": ">=3.0.0-b1,<4.0.0-b1"
+    "matomo": ">=4.0.0-b1,<5.0.0-b1"
   },
   "authors": [
     {
