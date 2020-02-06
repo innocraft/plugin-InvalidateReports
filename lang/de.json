@@ -1,0 +1,21 @@
+{
+    "InvalidateReports": {
+        "InvalidateReports": "Berichte als ungültig markieren",
+        "InvalidateHistoricalReports": "Historische Berichte zurücksetzen",
+        "PageDescription": "Sie können alle historischen Berichte für eine spezifische Webseite zurücksetzen, oder für alle Webseiten, durch klicken auf den Button \"Historische Berichte zurücksetzen\". Wenn Sie die historischen Berichte zurücksetzen, werden sie bei der nächsten Archivierung aus den Rohdaten neu generiert. Das ist sinnvoll wenn Sie Matomo dazu bringen wollen, die historischen Daten für alle Berichte neu zu generieren, zum Beispiel wenn:",
+        "ExamplesCustomReports": "Sie haben einen neuen %1$sbenutzerdefinierten Bericht%2$s und wollen, dass die %1$sbenutzerdefinierten Berichte%2$s für alle historischen Daten durchgeführt werden",
+        "ExamplesFunnels": "Sie haben einen neuen %1$sTrichter%2$s erstellt und möchten Ihre %1$sTrichter%2$s Berichte für alle historischen Daten neu generieren",
+        "ExamplesRawData": "Sie haben die rohen Besucher-Informationen verändert (zum Beispiel durchs %1$sImportieren neuer Besucher-Logs%2$s in der Vergangenheit) und möchten diese Änderungen in all Ihre Berichte einfliessen lassen.",
+        "AllWebsites": "alle Webseiten",
+        "AllSegments": "alle Segmente",
+        "ChooseSegment": "Segment auswählen",
+        "ChooseWebsite": "Website wählen",
+        "ChooseRange": "Wählen Sie wie weit zurück die Daten annulliert werden sollen",
+        "AllData": "alle historischen Daten",
+        "XMonths": "letzten %1$s Monate",
+        "LastMonth": "letzter Monat",
+        "InvalidationSuccess": "Berichte erfolgreich zurückgesetzt. Diese Berichte werden neu generiert, wenn die Berichtarchivierung das nächste Mal durchgeführt wird.",
+        "InvalidateAPIReturn": "Die CoreAdminHome.invalidateArchivedReports API antwortete:",
+        "ConfirmInvalidation": "Sie sind dabei alle historischen Berichte zu überprüfen, was Matomo dazu veranlasst, bei der nächsten Archivierung alle historischen Berichte neu aufzubereiten. Die Neuverarbeitung der historischen Berichte bei der nächsten Archivierung kann sehr lange dauern. Sind Sie sicher, dass Sie alle historischen Berichte für %1$s und %2$s wiederaufbereiten wollen?"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "InvalidateReports": {
+        "InvalidateReports": "Anuluj raporty",
+        "InvalidateHistoricalReports": "Anuluj historyczne raporty",
+        "ExamplesCustomReports": "stworzyłeś\/aś nowy %1$sSpersonalizowany Raport%2$s i chcesz aby %1$sSpersonalizowane Raporty%2$s zawierały wszystkie historyczne dane",
+        "ExamplesFunnels": "stworzyłeś\/aś nową %1$sŚcieżkę (lejek)%2$s i chcesz aby Twoje %1$sŚcieżki (lejki)%2$s zawierały wszystkie historyczne dane",
+        "ExamplesRawData": "zmodyfikowałeś\/aś nieprzetworzone informacje o odwiedzających (na przykład poprzez %1$simport nowych logów odwiedzających%2$s z przeszłości) i chcesz aby te zmiany były odzwierciedlone we wszystkich Twoich raportach.",
+        "AllWebsites": "wszystkie portale",
+        "AllSegments": "wszystkie grupy",
+        "ChooseSegment": "Wybierz segment",
+        "ChooseWebsite": "Wybierz stronę",
+        "ChooseRange": "Wybierz jak daleko wstecz anulować dane",
+        "AllData": "wszystkie dane historyczne",
+        "XMonths": "ostatnie %1$s miesiące\/ęcy",
+        "LastMonth": "ostatni miesiąc",
+        "InvalidationSuccess": "Raporty zostały pomyślnie anulowane. Zostaną one ponownie przetworzone podczas kolejnego wywołania archiwizacji.",
+        "InvalidateAPIReturn": "API CoreAdminHome.invalidateArchivedReports zwróciło:"
+    }
+}

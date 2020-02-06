@@ -1,0 +1,17 @@
+{
+    "InvalidateReports": {
+        "InvalidateReports": "Markeer rapporten als ongeldig.",
+        "InvalidateHistoricalReports": "Maak historische rapporten ongeldig",
+        "PageDescription": "Je kunt alle historische rapporten voor een specifieke website of voor alle websites ongeldig maken door op de knop \"Historische rapporten ongeldig\" te klikken. Wanneer je historische rapporten ongeldig maakt, worden deze opnieuw verwerkt vanuit de onbewerkte logboeken de volgende keer dat archivering wordt uitgevoerd. Dit is handig wanneer je Matomo wilt dwingen historische gegevens voor alle rapporten opnieuw te verwerken, bijvoorbeeld wanneer:",
+        "ExamplesCustomReports": "je hebt een nieuw %1$s maatwerk rapport %2$s en wil dat het %1$s maatwerk rapport %2$s wordt verwerkt voor alle historische gegevens",
+        "AllWebsites": "alle websites",
+        "AllSegments": "alle segmenten",
+        "ChooseSegment": "Kies segment",
+        "ChooseWebsite": "Kies website",
+        "ChooseRange": "Kies van hoe ver terug je de gegevens opnieuw wilt laten verwerken",
+        "AllData": "Alle historische data",
+        "XMonths": "Laatste %1$s maanden",
+        "LastMonth": "vorige maand",
+        "InvalidateAPIReturn": "De CoreAdminHome.invalidateArchivedReports API gaf terug:"
+    }
+}

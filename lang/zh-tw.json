@@ -1,0 +1,21 @@
+{
+    "InvalidateReports": {
+        "InvalidateReports": "廢除報表",
+        "InvalidateHistoricalReports": "廢除歷史報表",
+        "PageDescription": "你可以點擊「廢除歷史報表」按鈕來廢除全部網站或特定網站的所有歷史資料。當你廢除了歷史報表，它們將會在下次進行彙整時自原始紀錄檔中重新處理。這在想強制讓 Matomo 重新處理所有報表的歷史資料時這很實用，例如當：",
+        "ExamplesCustomReports": "你建立了一個新的%1$s自訂報表%2$s並想要讓%1$s自訂報表%2$s處理所有歷史資料。",
+        "ExamplesFunnels": "你建立了一個新的%1$s過濾%2$s並想要讓已%1$s過濾%2$s的報表處理所有歷史資料。",
+        "ExamplesRawData": "你編輯了原始訪客資訊（例如過去%1$s匯入了新訪客紀錄%2$s）並且想要讓原始紀錄檔的變更反映於你的報表中。",
+        "AllWebsites": "所有網站",
+        "AllSegments": "所有區隔",
+        "ChooseSegment": "選擇區隔",
+        "ChooseWebsite": "選擇網站",
+        "ChooseRange": "選擇要廢除多久前的資料",
+        "AllData": "所有歷史資料",
+        "XMonths": "過去 %1$s 個月",
+        "LastMonth": "上個月",
+        "InvalidationSuccess": "報表已成功廢除。這些報表將在下次執行報表彙整時重新處理。",
+        "InvalidateAPIReturn": "CoreAdminHome.invalidateArchivedReports API 回傳了：",
+        "ConfirmInvalidation": "你將要廢除所有歷史報表，這將讓 Matomo 在下次執行彙整時重新處理所有歷史報表。重新處理所有歷史報表可能讓下次彙整時花上較長的時間。你確定要廢除 %1$s 和 %2$s 的所有歷史報表？"
+    }
+}
