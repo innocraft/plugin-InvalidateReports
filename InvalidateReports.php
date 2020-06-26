@@ -13,9 +13,9 @@ namespace Piwik\Plugins\InvalidateReports;
 class InvalidateReports extends \Piwik\Plugin
 {
     /**
-     * @see Piwik_Plugin::getListHooksRegistered
+     * @see Piwik_Plugin::registerEvents
      */
-    public function getListHooksRegistered()
+    public function registerEvents()
     {
         return array(
             'AssetManager.getJavaScriptFiles' => 'getJsFiles',
