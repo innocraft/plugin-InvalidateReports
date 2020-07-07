@@ -1,0 +1,14 @@
+{
+    "InvalidateReports": {
+        "InvalidateReports": "Ugyldige rapporter",
+        "InvalidateHistoricalReports": "Ugyldige historiske rapporter",
+        "AllWebsites": "alle websteder",
+        "AllSegments": "alle segmenter",
+        "ChooseSegment": "Vælg segment",
+        "ChooseWebsite": "Vælg hjemmeside",
+        "ChooseRange": "Ingen forslag tilgængelige",
+        "AllData": "alle historiske data",
+        "XMonths": "sidste %1$s måneder",
+        "LastMonth": "sidste måned"
+    }
+}

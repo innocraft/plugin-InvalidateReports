@@ -1,0 +1,21 @@
+{
+    "InvalidateReports": {
+        "InvalidateReports": "Invalider les rapports",
+        "InvalidateHistoricalReports": "Invalider les rapports historiques",
+        "PageDescription": "Vous pouvez invalider tous les rapports historiques pour un site web spécifique, ou pour tous les sites web, en cliquant sur le bouton \"Invalider les rapports historiques\". Lorsque vous invalidez les rapports historiques, ils seront analysés à nouveau depuis les logs primaires la prochaine fois que l'archivage exécutera. Ceci est utile quand vous souhaitez forcer Matomo à analyser à nouveau les données historiques pour tous les rapports, par example quand :",
+        "ExamplesCustomReports": "vous avez créé un nouveau %1$srapport personnalisé %2$set souhaitez %1$sque les rapports personnalisés %2$ssoient analysés pour les données historiques",
+        "ExamplesFunnels": "vous avez créé un nouvel %1$sentonnoir%2$set souhaitez que vos rapports %1$sd'entonnoir%2$ssoient analysés pour l'ensemble des données existantes",
+        "ExamplesRawData": "vous avez modifié les données brutes des informations visiteur (par exemple en %1$simportant de nouveaux logs visiteur%2$spassés) et souhaitez que ces changements soient reflétés dans tous vos rapports.",
+        "AllWebsites": "tous les sites web",
+        "AllSegments": "tous les segments",
+        "ChooseSegment": "Sélectionner segment",
+        "ChooseWebsite": "Sélectionnez le site web",
+        "ChooseRange": "Sélectionnez la longueur de la période sur laquelle invalider les données",
+        "AllData": "toutes les données historiques",
+        "XMonths": "dernier (s) %1$smois",
+        "LastMonth": "mois dernier",
+        "InvalidationSuccess": "Les rapports ont été invalidés avec succès. Ces rapports seront traités à nouveau la prochaine fois que l'archivage des rapports sera exécuté.",
+        "InvalidateAPIReturn": "CoreAdminHome.invalidateArchivedReports a retourné :",
+        "ConfirmInvalidation": "Vous êtes sur le point d'invalider tous les rapports existants, ce qui entraînera Matomo à analyser tous les rapports à nouveau la prochaine fois que l'archivage s'exécutera. Ré-analyser tous les rapports pourrait prendre beaucoup de temps là prochaine fois que l'archivage des rapports s'exécutera. Êtes-vous sûr(e) de vouloir invalider l'ensemble des rapports pour %1$s et %2$s ?"
+    }
+}

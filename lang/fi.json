@@ -1,0 +1,16 @@
+{
+    "InvalidateReports": {
+        "InvalidateReports": "Mitätöi raportteja",
+        "InvalidateHistoricalReports": "Mitätöi historiallisia raportteja",
+        "AllWebsites": "kaikki sivustot",
+        "AllSegments": "kaikki segmentit",
+        "ChooseSegment": "Valitse segmentti",
+        "ChooseWebsite": "Valitse sivusto",
+        "ChooseRange": "Valitse, kuinka pitkältä aikaväliltä tietoja mitätöidään",
+        "AllData": "kaikki historiatieto",
+        "XMonths": "edelliset %1$s kuukautta",
+        "LastMonth": "edellinen kuukausi",
+        "InvalidationSuccess": "Raportit on mitätöity onnistuneesti. Nämä raportit käsitellään uudelleen, kun raporttien arkistointi suoritetaan seuraavan kerran.",
+        "InvalidateAPIReturn": "CoreAdminHome.invalidateArchivedReports-API palautti:"
+    }
+}

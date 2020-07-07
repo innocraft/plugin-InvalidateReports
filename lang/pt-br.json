@@ -1,0 +1,21 @@
+{
+    "InvalidateReports": {
+        "InvalidateReports": "Invalidar relatórios",
+        "InvalidateHistoricalReports": "Invalidar relatórios históricos",
+        "PageDescription": "Você pode invalidar todos os relatórios históricos de um site específico, ou de todos os sites, clicando no botão \"Invalidar relatórios históricos\". Quando você invalida relatórios históricos, eles serão reprocessados a partir dos logs brutos na próxima vez que o arquivamento for executado. Isto é útil quando você quiser forçar o Matomo a reprocessar dados históricos para todos os relatórios, por exemplo quando:",
+        "ExamplesCustomReports": "você criou um novo %1$sRelatório Customizado%2$s e quer que os %1$sRelatórios Customizados%2$s sejam processados para todos os dados históricos",
+        "ExamplesFunnels": "você criou um novo %1$sFunil%2$s e quer que seus relatórios %1$sFunil%2$s sejam processados para todos os dados históricos",
+        "ExamplesRawData": "você modificou a informação bruta de visitante (por exemplo %1$simportando novos logs de visitante%2$s no passado) e quer que estas alterações nos logs brutos sejam refletidas em todos os seus relatórios.",
+        "AllWebsites": "todos os sites",
+        "AllSegments": "todos os segmentos",
+        "ChooseSegment": "Escolha um segmento",
+        "ChooseWebsite": "Escolha o site",
+        "ChooseRange": "Escolha quanto tempo para invalidar dados",
+        "AllData": "todos os dados históricos",
+        "XMonths": "últimos %1$s meses",
+        "LastMonth": "último mês",
+        "InvalidationSuccess": "Os relatórios foram invalidados com sucesso. Estes relatórios serão reprocessados na próxima vez que o arquivamento de relatórios for executado.",
+        "InvalidateAPIReturn": "A API CoreAdminHome.invalidateArchivedReports retornou:",
+        "ConfirmInvalidation": "Você está prestes a invalidar todos os relatórios históricos, o que fará o Matomo reprocessar todos os relatórios históricos na próxima vez que o arquivamento executar. Reprocessar todos os relatórios históricos pode levar bastante tempo na próxima vez que o arquivamento executar. Tem certeza que deseja invalidar todos os relatórios históricos de %1$s e %2$s?"
+    }
+}
