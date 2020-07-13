@@ -1,6 +1,6 @@
 # Matomo Invalidate Reports Plugin
 
-[![Build Status](https://travis-ci.org/innocraft/plugin-InvalidateReports.svg?branch=master)](https://travis-ci.org/innocraft/plugin-InvalidateReports)
+[![Build Status](https://travis-ci.org/innocraft/plugin-InvalidateReports.svg?branch=4.x-dev)](https://travis-ci.org/innocraft/plugin-InvalidateReports)
 
 ## Description
 
