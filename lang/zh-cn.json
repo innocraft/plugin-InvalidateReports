@@ -1,5 +1,7 @@
 {
     "InvalidateReports": {
+        "InvalidateReports": "设置为无效报告",
+        "InvalidateHistoricalReports": "使得历史报告无效",
         "AllWebsites": "所有网站",
         "ChooseSegment": "选择区间",
         "ChooseWebsite": "选择网站"
