@@ -2,8 +2,20 @@
     "InvalidateReports": {
         "InvalidateReports": "设置为无效报告",
         "InvalidateHistoricalReports": "使得历史报告无效",
+        "PageDescription": "您可以通过单击“使历史报告无效”按钮来使特定网站或所有网站的所有历史报告无效。 当您使历史报告无效时，下次运行归档时，将从原始日志中对它们进行重新处理。 当您要强制Matomo重新处理所有报告的历史数据时，例如在以下情况下，这很有用：",
+        "ExamplesCustomReports": "您创建了一个新的%1$s个自定义报告%2$s，并希望针对所有历史数据处理这%1$s个自定义报告%2$s",
+        "ExamplesFunnels": "您创建了一个新的%1$s渠道%2$s，并希望针对所有历史数据处理您的%1$s渠道%2$s报告",
+        "ExamplesRawData": "您已经修改了原始访问者信息（例如，过去通过%1$s导入新的访问者日志%2$s），并且希望对原始日志的这些更改反映在所有报告中。",
         "AllWebsites": "所有网站",
+        "AllSegments": "所有细分",
         "ChooseSegment": "选择区间",
-        "ChooseWebsite": "选择网站"
+        "ChooseWebsite": "选择网站",
+        "ChooseRange": "选择数据失效的时间",
+        "AllData": "所有历史数据",
+        "XMonths": "最近%1$s个月",
+        "LastMonth": "上个月",
+        "InvalidationSuccess": "报告已成功无效。 下次运行报告归档时，将重新处理这些报告。",
+        "InvalidateAPIReturn": "返回了CoreAdminHome.invalidateArchivedReports API：",
+        "ConfirmInvalidation": "您将使所有历史报告失效，这将导致Matomo在下次运行存档时重新处理所有历史报告。 下一次存档运行时，重新处理所有历史报告可能会花费很长时间。 您确定要使%1$s和%2$s的所有历史报告都无效吗？"
     }
 }
