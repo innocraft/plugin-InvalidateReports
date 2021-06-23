@@ -70,7 +70,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
             'idSites' => $siteIds,
             'period'  => false,
             'dates'   => implode(',', $dates),
-            'segment' => $segment
+            'segment' => Common::unsanitizeInputValue($segment)
         ]);
     }
 }
