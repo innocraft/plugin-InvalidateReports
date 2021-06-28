@@ -50,7 +50,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         $this->checkTokenInUrl();
 
         $siteIds = Common::getRequestVar('idSites', '', 'string');
-        $segment = Common::getRequestVar('segment', '', 'string');
+        $segment = Request::getRawSegmentFromRequest();
         $months  = Common::getRequestVar('months', '', 'string');
         $dates   = [];
         list($minDate, $maxDate) = Site::getMinMaxDateAcrossWebsites($siteIds);
@@ -70,7 +70,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
             'idSites' => $siteIds,
             'period'  => false,
             'dates'   => implode(',', $dates),
-            'segment' => Common::unsanitizeInputValue($segment)
+            'segment' => $segment
         ]);
     }
 }
