@@ -2,6 +2,7 @@
     "InvalidateReports": {
         "InvalidateReports": "Invalidera rapporter",
         "InvalidateHistoricalReports": "Invalidera historiska rapporter",
+        "PageDescription": "Du kan ogiltigförklara alla historiska rapporter för en specifik webbplats eller för alla webbplatser genom att klicka på knappen \"Ogiltigförklara historiska rapporter\". När du ogiltigförklarar historiska rapporter kommer de att bearbetas om från råloggarna nästa gång arkivering körs. Detta är användbart när du vill tvinga Matomo att bearbeta historisk data för alla rapporter, till exempel när:",
         "ExamplesCustomReports": "du har skapat en ny %1$s anpassad rapport %2$s och vill att %1$sanpassade rapporter %2$s skall processa all historisk data.",
         "ExamplesFunnels": "du skapade en ny %1$s Funnel %2$s och vill att din %1$sFunnel%2$s rapport skall processa all historisk data.",
         "ExamplesRawData": "Du har modifierat den obehandlade besökarinformationen (till exempel genom att %1$simportera nya besökarloggar %2$s) och vill att dessa ändringar skall återspeglas i alla dina rapporter.",
@@ -14,6 +15,7 @@
         "XMonths": "sista %1$s månaderna",
         "LastMonth": "förra månaden",
         "InvalidationSuccess": "Invalideringen av dessa rapporter har lyckats. Dessa rapporter kommer att ombehandlas nästa gång rapportarkiverings-funktionen körs.",
-        "InvalidateAPIReturn": "CoreAdminHome.invalidateArchivedReports API svarar med:"
+        "InvalidateAPIReturn": "CoreAdminHome.invalidateArchivedReports API svarar med:",
+        "ConfirmInvalidation": "Du håller på att ogiltigförklara alla historiska rapporter, vilket kommer att få Matomo att bearbeta alla historiska rapporter igen nästa gång arkivering körs. Återprocessering av alla historiska rapporter kan ta lång tid nästa gång arkivering körs. Är du säker på att du vill ogiltigförklara alla historiska rapporter för %1$s och %2$s?"
     }
 }
