@@ -2,6 +2,8 @@
     "InvalidateReports": {
         "AllWebsites": "alle nettsteder",
         "ChooseSegment": "Velg segment",
-        "ChooseWebsite": "Velg nettsted"
+        "ChooseWebsite": "Velg nettsted",
+        "InvalidateHistoricalReports": "Ugyldiggjør historiske rapporter",
+        "InvalidateReports": "Ugyldiggjør rapporter"
     }
 }
