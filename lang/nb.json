@@ -4,6 +4,7 @@
         "ChooseSegment": "Velg segment",
         "ChooseWebsite": "Velg nettsted",
         "InvalidateHistoricalReports": "Ugyldiggjør historiske rapporter",
-        "InvalidateReports": "Ugyldiggjør rapporter"
+        "InvalidateReports": "Ugyldiggjør rapporter",
+        "AllData": "all historisk data"
     }
 }
