@@ -5,6 +5,9 @@
         "ChooseWebsite": "Velg nettsted",
         "InvalidateHistoricalReports": "Ugyldiggjør historiske rapporter",
         "InvalidateReports": "Ugyldiggjør rapporter",
-        "AllData": "all historisk data"
+        "AllData": "all historisk data",
+        "AllSegments": "alle segmenter",
+        "ChooseRange": "Velg hvor langt tilbake data skal ugyldiggjøres",
+        "ExamplesCustomReports": "du har opprettet en ny %1$segendefinert rapport%2$s og ønsker at %1$segendefinerte rapporter%2$s skal behandles for all historisk data"
     }
 }
