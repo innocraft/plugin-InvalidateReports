@@ -5,7 +5,7 @@
         "PageDescription": "You can invalidate all historical reports for a specific or all websites by clicking the \"Invalidate historical reports\" button. This re-processes them from the raw logs the next time archiving runs. Force Matomo to re-process historical data for all reports, for example when:",
         "ExamplesCustomReports": "you created a new %1$sCustom Report%2$s and want to process all historical data in it",
         "ExamplesFunnels": "you created a new %1$sFunnel%2$s and want to process all historical data in it",
-        "ExamplesRawData": "you have modified the raw visitor info (for example by %1$simporting new visitor logs%2$s) and want these to raw log changes reflected in all your reports.",
+        "ExamplesRawData": "you have modified the raw visitor info (for example by %1$simporting new visitor logs%2$s) and want these raw log changes reflected in all your reports.",
         "AllWebsites": "all websites",
         "AllSegments": "all segments",
         "ChooseSegment": "Choose segment",
