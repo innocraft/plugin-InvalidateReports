@@ -20,7 +20,7 @@ describe("InvalidateReports", function () {
     });
 
     it('should show confirmation', async function () {
-        await page.click('[onconfirm="invalidate()"]');
+        await page.click('[piwik-save-button]');
         await page.waitForTimeout(700); // wait for animation
         var elem = await page.$('.modal.open');
         expect(await elem.screenshot()).to.matchImage('confirm');
@@ -51,7 +51,7 @@ describe("InvalidateReports", function () {
     });
 
     it('should show confirmation with site and segment', async function () {
-        await page.click('[onconfirm="invalidate()"]');
+        await page.click('[piwik-save-button]');
         await page.waitForTimeout(700); // wait for animation
         var elem = await page.$('.modal.open');
         expect(await elem.screenshot()).to.matchImage('confirm_site_and_segment');
