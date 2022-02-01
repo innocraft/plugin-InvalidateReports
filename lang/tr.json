@@ -2,10 +2,10 @@
     "InvalidateReports": {
         "InvalidateReports": "raporları geçersiz kıl",
         "InvalidateHistoricalReports": "Geçmiş raporlarını geçersiz kıl",
-        "PageDescription": "Belirli bir web sitesi için tüm geçmiş raporları \"Geçmiş raporlarını geçersiz kıl\" düğmesine tıklanarak geçersiz kılınabilir. Geçmiş raporları geçersiz kılındığında arşivleme işleminin bir sonraki çalışmasında ham günlük kayıtlarından yeniden işlenecekler. Bu seçenek tüm geçmiş Matomo raporlarının yeniden işlenmesi istenilen şu gibi durumlarda işe yarar:",
-        "ExamplesCustomReports": "yeni bir %1$sözel rapor%2$s eklendiğinde ve %1$sözel raporların%2$s tüm geçmiş veriler için işlenmesi istendiğinde",
-        "ExamplesFunnels": "yeni bir %1$sHuni%2$s eklendiğinde ve %1$shunilerin%2$s tüm geçmiş veriler için işlenmesi istendiğinde",
-        "ExamplesRawData": "ham ziyaretçi bilgileri değiştirildiğinde (%1$s yeni geçmiş ziyaretçi günlüğü kayıtlarının içe aktarılması%2$s gibi) ve bu değişikliklerin tüm raporlara yansıtılması istendiğinde.",
+        "PageDescription": "Web sitelerinin tümü ya da beliri biri için tüm geçmiş raporları \"Geçmiş raporlarını geçersiz kıl\" düğmesine tıklanarak geçersiz kılınabilir. Bu raporlar arşivleme işleminin bir sonraki çalışmasında ham günlük kayıtlarından yeniden işlenir. Bu seçenek tüm geçmiş Matomo raporlarının yeniden işlenmesi istenilen şu gibi durumlarda işe yarar:",
+        "ExamplesCustomReports": "yeni bir %1$sözel rapor%2$s eklendiğinde ve içindeki tüm geçmiş verilerin işlenmesi istendiğinde",
+        "ExamplesFunnels": "yeni bir %1$sHuni%2$s eklendiğinde ve içindeki tüm geçmiş verilerin işlenmesi istendiğinde",
+        "ExamplesRawData": "ham ziyaretçi bilgileri değiştirildiğinde (%1$s yeni ziyaretçi günlüğü kayıtlarının içe aktarılması%2$s gibi) ve bu ham günlük kayıtlarındaki değişikliklerin tüm raporlara yansıtılması istendiğinde.",
         "AllWebsites": "tüm web siteleri",
         "AllSegments": "tüm dilimler",
         "ChooseSegment": "Dilim seçin",
@@ -14,8 +14,8 @@
         "AllData": "tüm geçmiş veriler",
         "XMonths": "son %1$s ay",
         "LastMonth": "geçen ay",
-        "InvalidationSuccess": "Raporlar geçersiz kılındı. Bu raporlar arşivleme görevinin bir sonraki yürütülmesinde yeniden işlenecek.",
+        "InvalidationSuccess": "Raporlar geçersiz kılındı. Rapor arşivleme görevinin bir sonraki yürütülmesinde yeniden işlenecekler.",
         "InvalidateAPIReturn": "CoreAdminHome.invalidateArchivedReports API yanıtı:",
-        "ConfirmInvalidation": "Tüm geçmiş raporlarını geçersiz kılmak üzeresiniz. Bu raporlar Matomo tarafından arşivleme görevinin bir sonraki yürütülmesinde yeniden işlenecek. Tüm geçmiş raporların yeniden işlenmesi uzun zaman alabilir. %1$s ve %2$siçin tüm geçmiş raporlarının geçersiz kılınmasını istiyor musunuz?"
+        "ConfirmInvalidation": "%1$s ve %2$s için tüm geçmiş raporlarının geçersiz kılınmasını istiyor musunuz? (Bu işlem arşivleme görevinin bir sonraki yürütülmesinde tüm geçmiş raporlarının Matomo tarafından yeniden işlenmesine neden olur ve uzun zaman alabilir.)"
     }
 }
