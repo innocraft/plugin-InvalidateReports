@@ -3,7 +3,7 @@
         "InvalidateReports": "Bëji raportet të pavlefshëm",
         "InvalidateHistoricalReports": "Bëji raportet e dikurshëm të pavlefshëm",
         "PageDescription": "Mundeni të bëni të pavlefshëm krejt raportet e dikurshëm për një sajt të dhënë, ose për krejt sajtet, duke klikuar mbi butonin “Bëji të pavlefshëm raportet e dikurshëm”. Kjo i ripërpunon ata bazuar në të dhënat bruto të regjistruara, herës tjetër që do të xhirohet arkivimi. Detyroje Matomo-n të ripërpunojë të dhëna të dikurshme për krejt raportet, për shembull, kur:",
-        "ExamplesCustomReports": "krijuat një %1$sRaport Vetjak%2$s të ri dhe doni që %1$sRaportet Vetjake%2$s të përpunohen për krejt të dhënat e dikurshme",
+        "ExamplesCustomReports": "krijuat një %1$sRaport Vetjak%2$s të ri dhe doni të përpunohen krejt të dhënat e dikurshme në të",
         "ExamplesFunnels": "krijuat një %1$sHinkë%2$s të re dhe doni të përpunoni krejt të dhënat e dikurshme në të",
         "ExamplesRawData": "keni ndryshuar të dhëna vizitori të papërpunuara (për shembull, duke %1$simportuar regjistrime vizitorësh të rinj%2$s) dhe dëshironi që këto ndryshime te regjistra të papërpunuar të pasqyrohen në krejt raportet tuaj.",
         "AllWebsites": "krejt sajtet",
