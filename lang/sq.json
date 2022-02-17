@@ -2,10 +2,10 @@
     "InvalidateReports": {
         "InvalidateReports": "Bëji raportet të pavlefshëm",
         "InvalidateHistoricalReports": "Bëji raportet e dikurshëm të pavlefshëm",
-        "PageDescription": "Mundeni të bëni të pavlefshëm krejt raportet e dikurshëm për një sajt të dhënë, ose për krejt sajtet, duke klikuar mbi butonin \"Bëni të pavlefshëm raportet e dikurshëm\". Kur bëni të pavlefshëm raporte të dikurshëm, ata do të ripërpunohen bazuar në të dhënat bruto të regjistruara, herës tjetër që do të xhirohet arkivimi. Kjo është e dobishme kur doni ta detyroni Matomo-n të ripërpunojë të dhëna të dikurshme për krejt raportet, për shembull, kur:",
-        "ExamplesCustomReports": "krijuat një %1$sRaport Vetjak%2$s të ri dhe doni që %1$sRaportet Vetjake%2$s të përpunohen për krejt të dhënat e dikurshme",
-        "ExamplesFunnels": "krijuat një %1$sHinkë%2$s të re dhe doni që raportet tuaja %1$sHinkë%2$s të përpunohen për krejt të dhënat e dikurshme",
-        "ExamplesRawData": "keni ndryshuar të dhëna vizitori të papërpunuara (për shembull, duke %1$simportuar regjistrime vizitorësh të rinj%2$s në të shkuarën) dhe dëshironi që këto ndryshime te regjistra të papërpunuar të pasqyrohen në krejt raportet tuaj.",
+        "PageDescription": "Mundeni të bëni të pavlefshëm krejt raportet e dikurshëm për një sajt të dhënë, ose për krejt sajtet, duke klikuar mbi butonin “Bëji të pavlefshëm raportet e dikurshëm”. Kjo i ripërpunon ata bazuar në të dhënat bruto të regjistruara, herës tjetër që do të xhirohet arkivimi. Detyroje Matomo-n të ripërpunojë të dhëna të dikurshme për krejt raportet, për shembull, kur:",
+        "ExamplesCustomReports": "krijuat një %1$sRaport Vetjak%2$s të ri dhe doni të përpunohen krejt të dhënat e dikurshme në të",
+        "ExamplesFunnels": "krijuat një %1$sHinkë%2$s të re dhe doni të përpunoni krejt të dhënat e dikurshme në të",
+        "ExamplesRawData": "keni ndryshuar të dhëna vizitori të papërpunuara (për shembull, duke %1$simportuar regjistrime vizitorësh të rinj%2$s) dhe dëshironi që këto ndryshime te regjistra të papërpunuar të pasqyrohen në krejt raportet tuaj.",
         "AllWebsites": "krejt sajtet",
         "AllSegments": "krejt segmentet",
         "ChooseSegment": "Zgjidhni segment",
@@ -16,6 +16,6 @@
         "LastMonth": "muajin e shkuar",
         "InvalidationSuccess": "Raportet u bënë me sukses të pavlefshëm. Këto raporte do të ripërpunohen herës tjetër që do të vihet në punë arkivimi i raporteve.",
         "InvalidateAPIReturn": "API CoreAdminHome.invalidateArchivedReports u përgjigj:",
-        "ConfirmInvalidation": "Ju ndan një hap nga bërja të pavlefshëm e krejt raporteve të dikurshëm, çka do ta bëjë Matomo-n të ripërpunojë krejt raportet e dikurshme herës tjetër që do të xhironi procesin e arkivimit. Ripërpunimi i krejt raporteve të dikurshëm mund të dojë shumë kohë gjatë arkivimit tuaj të ardhshëm. Jeni i sigurt se doni të bëni të pavlefshëm krejt raportet e dikurshëm për %1$s dhe %2$s?"
+        "ConfirmInvalidation": "Të bëhen të pavlefshëm krejt raportet e dikurshëm për %1$s dhe %2$s? (Kjo do ta bëjë Matomo-n të ripërpunojë krejt raportet e dikurshme, herës tjetër që do të xhironi procesin e arkivimit dhe mund dojë një kohë të gjatë.)"
     }
 }
