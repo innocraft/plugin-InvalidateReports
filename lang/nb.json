@@ -12,6 +12,7 @@
         "XMonths": "siste %1$s måneder",
         "LastMonth": "siste måned",
         "ExamplesRawData": "du har endret rå besøksinfo (for eksempel ved å %1$simportere nye besøkslogger%2$s) og ønsker å utføre disse endringene for rå-loggene i alle rapportene dine.",
-        "InvalidateAPIReturn": "CoreAdminHome.invalidateArchivedReports-API-et svarte med følgende:"
+        "InvalidateAPIReturn": "CoreAdminHome.invalidateArchivedReports-API-et svarte med følgende:",
+        "InvalidationSuccess": "Rapporter har blitt invalidisert. De vil bli behandlet igjen neste gang rapport-arkivering kjører."
     }
 }
