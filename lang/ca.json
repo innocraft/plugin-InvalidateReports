@@ -1,6 +1,21 @@
 {
     "InvalidateReports": {
         "ChooseSegment": "Seleccioneu un segment",
-        "ChooseWebsite": "Triar lloc web"
+        "ChooseWebsite": "Triar lloc web",
+        "PageDescription": "Podeu invalidar tots els informes històrics d'un lloc web concret o de tots fent clic al botó \"Invalida els informes històrics\". Això els torna a processar a partir dels registres en brut la propera vegada que s'executi l'arxiu. Força Matomo a tornar a processar les dades històriques de tots els informes, per exemple quan:",
+        "ConfirmInvalidation": "Vols invalidar tots els informes històrics per a %1$s i %2$s? (Això fa que Matomo torni a processar tots els informes històrics la propera vegada que s'executi l'arxivat, i pot trigar molt de temps.)",
+        "InvalidateReports": "Invalidar els informes",
+        "InvalidateHistoricalReports": "Invalidar els informes històrics",
+        "AllWebsites": "tots els llocs web",
+        "AllSegments": "tots els segments",
+        "ChooseRange": "Trieu fins a quin punt retrocedir per invalidar les dades",
+        "AllData": "totes les dades històriques",
+        "XMonths": "darrers %1$s mesos",
+        "LastMonth": "darrer mes",
+        "InvalidateAPIReturn": "L'API CoreAdminHome.invalidateArchivedReports ha retornat:",
+        "ExamplesCustomReports": "heu creat un %1$sInforme personalitzat%2$s nou i voleu processar-ne totes les dades històriques",
+        "ExamplesFunnels": "heu creat un %1$sEmbut%2$s nou i voleu processar-ne totes les dades històriques",
+        "ExamplesRawData": "heu modificat la informació bruta dels visitants (per exemple, %1$simportant nous registres de visitants%2$s) i voleu que aquests canvis de registre en brut es reflecteixin en tots els vostres informes.",
+        "InvalidationSuccess": "Els informes han estat invalidats. Es tornaran a processar la propera vegada que s'executi l'arxivat d'informes."
     }
 }
