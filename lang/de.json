@@ -16,6 +16,6 @@
         "LastMonth": "letzter Monat",
         "InvalidationSuccess": "Berichte erfolgreich zurückgesetzt. Diese Berichte werden neu generiert, wenn die Berichtarchivierung das nächste Mal durchgeführt wird.",
         "InvalidateAPIReturn": "Die CoreAdminHome.invalidateArchivedReports API antwortete:",
-        "ConfirmInvalidation": "Sie sind dabei alle historischen Berichte zu überprüfen, was Matomo dazu veranlasst, bei der nächsten Archivierung alle historischen Berichte neu aufzubereiten. Die Neuverarbeitung der historischen Berichte bei der nächsten Archivierung kann sehr lange dauern. Sind Sie sicher, dass Sie alle historischen Berichte für %1$s und %2$s wiederaufbereiten wollen?"
+        "ConfirmInvalidation": "Alle historischen Berichte für %1$s und %2$s wiederaufbereiten? (Dies führt dazu, dass Matomo bei der nächsten Archivierung alle historischen Berichte neu verarbeitet, was sehr lange dauern kann.)"
     }
 }
