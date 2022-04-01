@@ -1,7 +1,21 @@
 {
     "InvalidateReports": {
-        "AllWebsites": "seluruh situs",
-        "ChooseSegment": "Pilih bidang",
-        "ChooseWebsite": "Pilih situs"
+        "AllWebsites": "semua situs web",
+        "ChooseSegment": "Pilih segmen",
+        "ChooseWebsite": "Pilih situs web",
+        "InvalidateHistoricalReports": "Membatalkan laporan historis",
+        "AllSegments": "semua segmen",
+        "ChooseRange": "Pilih seberapa jauh ke belakang untuk membatalkan data",
+        "InvalidateAPIReturn": "CoreAdminHome.invalidateArchivedReports API dikembalikan:",
+        "ExamplesCustomReports": "Anda membuat %1$sLaporan Khusus%2$s baru dan ingin memproses semua data historis di dalamnya",
+        "ExamplesFunnels": "Anda membuat %1$sFunnel%2$s baru dan ingin memproses semua data historis di dalamnya",
+        "ExamplesRawData": "Anda telah mengubah info pengunjung mentah (misalnya dengan %1$smengimpor log pengunjung baru%2$s) dan ingin perubahan log mentah ini tercermin dalam semua laporan Anda.",
+        "InvalidationSuccess": "Laporan telah dibatalkan. Mereka akan diproses ulang saat pengarsipan laporan berjalan.",
+        "AllData": "semua data historis",
+        "InvalidateReports": "Membatalkan laporan",
+        "PageDescription": "Anda dapat membatalkan semua laporan historis untuk situs web tertentu atau semua situs web dengan mengeklik tombol \"Batalkan laporan historis\". Ini akan memproses ulang data tersebut dari log mentah saat pengarsipan berikutnya berjalan. Paksa Matomo untuk memproses ulang data historis untuk semua laporan, misalnya ketika:",
+        "XMonths": "%1$s bulan terakhir",
+        "LastMonth": "bulan lalu",
+        "ConfirmInvalidation": "Batalkan semua laporan historis untuk %1$s dan %2$s? (Ini menyebabkan Matomo memproses ulang semua laporan historis saat pengarsipan berikutnya berjalan dan mungkin butuh waktu yang lama.)"
     }
 }
