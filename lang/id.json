@@ -8,7 +8,7 @@
         "ChooseRange": "Pilih seberapa jauh ke belakang untuk membatalkan data",
         "InvalidateAPIReturn": "CoreAdminHome.invalidateArchivedReports API dikembalikan:",
         "ExamplesCustomReports": "Anda membuat %1$sLaporan Khusus%2$s baru dan ingin memproses semua data historis di dalamnya",
-        "ExamplesFunnels": "Anda membuat %1$sFunnel%2$s baru dan ingin memproses semua data historis di dalamnya",
+        "ExamplesFunnels": "Anda membuat %1$sCorong Pemasaran%2$s baru dan ingin memproses semua data historis di dalamnya",
         "ExamplesRawData": "Anda telah mengubah info pengunjung mentah (misalnya dengan %1$smengimpor log pengunjung baru%2$s) dan ingin perubahan log mentah ini tercermin dalam semua laporan Anda.",
         "InvalidationSuccess": "Laporan telah dibatalkan. Mereka akan diproses ulang saat pengarsipan laporan berjalan.",
         "AllData": "semua data historis",
