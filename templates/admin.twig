@@ -4,12 +4,6 @@
 
 {% block content %}
 
-<div class="ui-confirm" id="confirmInvalidation">
-    <h2>{{ 'InvalidateReports_ConfirmInvalidation'|translate('<span class="website"></span>', '<span class="segment"></span>')|raw }}</h2>
-    <input role="yes" type="button" value="{{ 'General_Yes'|translate }}"/>
-    <input role="no" type="button" value="{{ 'General_No'|translate }}"/>
-</div>
-
 <div piwik-content-block content-title="{{ title|e('html_attr') }}" class="invalidate-reports-page">
 
     <p>{{ 'InvalidateReports_PageDescription'|translate }}</p>
@@ -20,47 +14,10 @@
         <li>{{ 'InvalidateReports_ExamplesRawData'|translate('<a href="https://piwik.org/log-analytics/" target="_blank">', '</a>')|raw }}</li>
     </ul>
 
-    <div ng-controller="InvalidateReportsController">
-
-        <div class="form-group row">
-            <div class="col s12 ng-scope input-field m6">
-                <div class="ng-scope">
-                    <div piwik-siteselector
-                         title=""
-                         show-selected-site="true"
-                         siteid="all"
-                         sitename="{{ 'InvalidateReports_AllWebsites'|translate|e('html_attr') }}"
-                         class="site-selection select-wrapper"
-                         ng-model="site"
-                         id="invalidateSite"
-                         ng-change="fetchSegments()"
-                         all-sites-text="{{ 'InvalidateReports_AllWebsites'|translate|e('html_attr') }}"
-                         all-sites-location="top"
-                         switch-site-on-select="false"></div>
-                    <label for="invalidateSite" class="ng-binding">{{ 'InvalidateReports_ChooseWebsite'|translate }}</label>
-                </div>
-            </div>
-        </div>
-
-        <div piwik-field uicontrol="select" name="segment"
-             ng-model="segment"
-             title="{{ 'InvalidateReports_ChooseSegment'|translate|e('html_attr') }}"
-             value=""
-             options="availableSegments">
-        </div>
-
-        <div piwik-field uicontrol="select" name="months"
-             ng-model="months"
-             title="{{ 'InvalidateReports_ChooseRange'|translate|e('html_attr') }}"
-             value="0"
-             options="{{ availableRanges|json_encode }}">
-        </div>
-
-        <div piwik-save-button
-             onconfirm="invalidate()"
-             saving="loading"
-             value="{{ 'InvalidateReports_InvalidateReports'|translate|e('html_attr') }}"></div>
-    </div>
+  <div
+    vue-entry="InvalidateReports.InvalidateReports"
+    available-ranges="{{ availableRanges|default(null)|json_encode|e('html_attr') }}"
+  ></div>
 
 </div>
 

@@ -18,19 +18,9 @@ class InvalidateReports extends \Piwik\Plugin
     public function registerEvents()
     {
         return array(
-            'AssetManager.getJavaScriptFiles' => 'getJsFiles',
             'AssetManager.getStylesheetFiles' => 'getStylesheetFiles',
             'Translate.getClientSideTranslationKeys' => 'getClientSideTranslationKeys'
         );
-    }
-
-    /**
-     * Adds required JS files
-     * @param $jsFiles
-     */
-    public function getJsFiles(&$jsFiles)
-    {
-        $jsFiles[] = "plugins/InvalidateReports/javascripts/invalidatereports.controller.js";
     }
 
     /**
@@ -51,5 +41,13 @@ class InvalidateReports extends \Piwik\Plugin
         $translationKeys[] = "InvalidateReports_AllSegments";
         $translationKeys[] = "InvalidateReports_InvalidationSuccess";
         $translationKeys[] = "InvalidateReports_InvalidateAPIReturn";
+        $translationKeys[] = 'InvalidateReports_ConfirmInvalidation';
+        $translationKeys[] = 'InvalidateReports_ChooseWebsite';
+        $translationKeys[] = 'InvalidateReports_ChooseSegment';
+        $translationKeys[] = 'InvalidateReports_ChooseRange';
+        $translationKeys[] = 'InvalidateReports_ChooseRange';
+        $translationKeys[] = 'InvalidateReports_InvalidateReports';
+        $translationKeys[] = 'General_Segment';
+        $translationKeys[] = 'General_Website';
     }
 }
