@@ -117,13 +117,6 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_a5a2__;
 
 /***/ }),
 
-/***/ "a5f2":
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
 /***/ "fae3":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -153,7 +146,7 @@ if (typeof window !== 'undefined') {
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
 
-// CONCATENATED MODULE: ./node_modules/@vue/cli-plugin-babel/node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/@vue/cli-plugin-babel/node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/@vue/cli-service/node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./plugins/InvalidateReports/vue/src/InvalidateReports/InvalidateReports.vue?vue&type=template&id=07a8f0ec
+// CONCATENATED MODULE: ./node_modules/@vue/cli-plugin-babel/node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/@vue/cli-plugin-babel/node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/@vue/cli-service/node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./plugins/InvalidateReports/vue/src/InvalidateReports/InvalidateReports.vue?vue&type=template&id=140fd57c
 
 var _hoisted_1 = {
   class: "form-group row"
@@ -172,13 +165,16 @@ var _hoisted_5 = {
   class: "ng-binding"
 };
 var _hoisted_6 = {
+  name: "segment"
+};
+var _hoisted_7 = {
   class: "ui-confirm",
   id: "confirmInvalidation",
   ref: "confirmInvalidation"
 };
-var _hoisted_7 = ["innerHTML"];
-var _hoisted_8 = ["value"];
+var _hoisted_8 = ["innerHTML"];
 var _hoisted_9 = ["value"];
+var _hoisted_10 = ["value"];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_SiteSelector = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("SiteSelector");
 
@@ -201,7 +197,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "switch-site-on-select": false,
     sitename: _ctx.translate('InvalidateReports_AllWebsites'),
     "all-sites-text": _ctx.translate('InvalidateReports_AllWebsites')
-  }, null, 8, ["model-value", "sitename", "all-sites-text"])]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("label", _hoisted_5, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(_ctx.translate('InvalidateReports_ChooseWebsite')), 1)])])]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", null, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_Field, {
+  }, null, 8, ["model-value", "sitename", "all-sites-text"])]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("label", _hoisted_5, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(_ctx.translate('InvalidateReports_ChooseWebsite')), 1)])])]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", _hoisted_6, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_Field, {
     uicontrol: "select",
     name: "segment",
     modelValue: _ctx.segment,
@@ -226,19 +222,19 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }),
     saving: _ctx.loading,
     value: _ctx.translate('InvalidateReports_InvalidateReports')
-  }, null, 8, ["saving", "value"]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", _hoisted_6, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("h2", {
+  }, null, 8, ["saving", "value"]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", _hoisted_7, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("h2", {
     innerHTML: _ctx.$sanitize(_ctx.confirmInvalidationTitle)
-  }, null, 8, _hoisted_7), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("input", {
+  }, null, 8, _hoisted_8), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("input", {
     role: "yes",
     type: "button",
     value: _ctx.translate('General_Yes')
-  }, null, 8, _hoisted_8), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("input", {
+  }, null, 8, _hoisted_9), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("input", {
     role: "no",
     type: "button",
     value: _ctx.translate('General_No')
-  }, null, 8, _hoisted_9)], 512)]);
+  }, null, 8, _hoisted_10)], 512)]);
 }
-// CONCATENATED MODULE: ./plugins/InvalidateReports/vue/src/InvalidateReports/InvalidateReports.vue?vue&type=template&id=07a8f0ec
+// CONCATENATED MODULE: ./plugins/InvalidateReports/vue/src/InvalidateReports/InvalidateReports.vue?vue&type=template&id=140fd57c
 
 // EXTERNAL MODULE: external "CoreHome"
 var external_CoreHome_ = __webpack_require__("19dc");
@@ -279,7 +275,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       loading: false,
       site: {
         id: 'all',
-        name: ''
+        name: Object(external_CoreHome_["translate"])('InvalidateReports_AllWebsites')
       },
       segment: '',
       months: 0,
@@ -353,25 +349,21 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   computed: {
     confirmInvalidationTitle: function confirmInvalidationTitle() {
       var isAllSites = this.site.id === 'all';
-      return Object(external_CoreHome_["translate"])('InvalidateReports_ConfirmInvalidation', isAllSites ? this.site.name : "".concat(Object(external_CoreHome_["translate"])('General_Website'), " ").concat(this.site.name), this.segment ? "".concat(Object(external_CoreHome_["translate"])('General_Segment'), " ").concat(this.availableSegments[this.segment]) : Object(external_CoreHome_["translate"])('InvalidateReports_AllSegments'));
+      var siteName = external_CoreHome_["Matomo"].helper.htmlEntities(this.site.name);
+      var segmentStr = Object(external_CoreHome_["translate"])('General_Segment');
+      var segmentTitle = this.segment ? "".concat(segmentStr, " ").concat(external_CoreHome_["Matomo"].helper.htmlEntities(this.availableSegments[this.segment])) : Object(external_CoreHome_["translate"])('InvalidateReports_AllSegments');
+      var websitesTitle = isAllSites ? siteName : "".concat(Object(external_CoreHome_["translate"])('General_Website'), " ").concat(siteName);
+      return Object(external_CoreHome_["translate"])('InvalidateReports_ConfirmInvalidation', "<span class=\"website\">".concat(websitesTitle, "</span>"), "<span class=\"segment\">".concat(segmentTitle, "</span>"));
     }
   }
 }));
 // CONCATENATED MODULE: ./plugins/InvalidateReports/vue/src/InvalidateReports/InvalidateReports.vue?vue&type=script&lang=ts
  
-// EXTERNAL MODULE: ./plugins/InvalidateReports/vue/src/InvalidateReports/InvalidateReports.vue?vue&type=custom&index=0&blockType=todo
-var InvalidateReportsvue_type_custom_index_0_blockType_todo = __webpack_require__("a5f2");
-var InvalidateReportsvue_type_custom_index_0_blockType_todo_default = /*#__PURE__*/__webpack_require__.n(InvalidateReportsvue_type_custom_index_0_blockType_todo);
-
 // CONCATENATED MODULE: ./plugins/InvalidateReports/vue/src/InvalidateReports/InvalidateReports.vue
 
 
 
 InvalidateReportsvue_type_script_lang_ts.render = render
-/* custom blocks */
-
-if (typeof InvalidateReportsvue_type_custom_index_0_blockType_todo_default.a === 'function') InvalidateReportsvue_type_custom_index_0_blockType_todo_default()(InvalidateReportsvue_type_script_lang_ts)
-
 
 /* harmony default export */ var InvalidateReports = (InvalidateReportsvue_type_script_lang_ts);
 // CONCATENATED MODULE: ./plugins/InvalidateReports/vue/src/index.ts
