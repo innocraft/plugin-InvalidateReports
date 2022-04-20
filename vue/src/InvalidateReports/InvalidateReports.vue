@@ -4,12 +4,6 @@
   @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
 -->
 
-<todo>
-- get to build
-- test in UI
-- create PR
-</todo>
-
 <template>
   <div>
     <div class="form-group row">
@@ -36,7 +30,7 @@
         </div>
       </div>
     </div>
-    <div>
+    <div name="segment">
       <Field
         uicontrol="select"
         name="segment"
@@ -113,7 +107,7 @@ export default defineComponent({
       loading: false,
       site: {
         id: 'all',
-        name: '',
+        name: translate('InvalidateReports_AllWebsites'),
       },
       segment: '',
       months: 0,
@@ -189,12 +183,21 @@ export default defineComponent({
   computed: {
     confirmInvalidationTitle() {
       const isAllSites = this.site.id === 'all';
+
+      const siteName = Matomo.helper.htmlEntities(this.site.name);
+
+      const segmentStr = translate('General_Segment');
+      const segmentTitle = this.segment
+        ? `${segmentStr} ${Matomo.helper.htmlEntities(this.availableSegments[this.segment])}`
+        : translate('InvalidateReports_AllSegments');
+      const websitesTitle = isAllSites
+        ? siteName
+        : `${translate('General_Website')} ${siteName}`;
+
       return translate(
         'InvalidateReports_ConfirmInvalidation',
-        isAllSites ? this.site.name : `${translate('General_Website')} ${this.site.name}`,
-        this.segment
-          ? `${translate('General_Segment')} ${this.availableSegments[this.segment]}`
-          : translate('InvalidateReports_AllSegments'),
+        `<span class="website">${websitesTitle}</span>`,
+        `<span class="segment">${segmentTitle}</span>`,
       );
     },
   },

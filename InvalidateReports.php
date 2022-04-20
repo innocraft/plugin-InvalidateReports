@@ -38,6 +38,7 @@ class InvalidateReports extends \Piwik\Plugin
      */
     public function getClientSideTranslationKeys(&$translationKeys)
     {
+        $translationKeys[] = "InvalidateReports_AllWebsites";
         $translationKeys[] = "InvalidateReports_AllSegments";
         $translationKeys[] = "InvalidateReports_InvalidationSuccess";
         $translationKeys[] = "InvalidateReports_InvalidateAPIReturn";
