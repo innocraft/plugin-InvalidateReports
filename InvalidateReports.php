@@ -46,7 +46,6 @@ class InvalidateReports extends \Piwik\Plugin
         $translationKeys[] = 'InvalidateReports_ChooseWebsite';
         $translationKeys[] = 'InvalidateReports_ChooseSegment';
         $translationKeys[] = 'InvalidateReports_ChooseRange';
-        $translationKeys[] = 'InvalidateReports_ChooseRange';
         $translationKeys[] = 'InvalidateReports_InvalidateReports';
         $translationKeys[] = 'General_Segment';
         $translationKeys[] = 'General_Website';
