@@ -2,10 +2,10 @@
     "InvalidateReports": {
         "InvalidateReports": "Invalida report",
         "InvalidateHistoricalReports": "Invalida report storici",
-        "PageDescription": "È possibile invalidare tutti i report storici per un sito web specifico o per tutti i siti web cliccando sul pulsante \"Invalida report storici\". Quando invalidi i report storici, questi verranno rielaborati a partire dai log non elaborati al prossimo avvio dell'archiviazione. Ciò è utile quando si desidera forzare Matomo a rielaborare i dati storici per tutti i report, ad esempio quando:",
-        "ExamplesCustomReports": "hai creato un nuovo %1$sReport Personalizzato%2$s e vuoi che i%1$sReport Personalizzati%2$s vengano rielaborati per tutti i dati storici",
-        "ExamplesFunnels": "hai creato un nuovo %1$sFunnel%2$s e vuoi che i tuoi report %1$sFunnel%2$s vengano rielaborati per tutti i dati storici",
-        "ExamplesRawData": "hai modificato le informazioni grezze dei visitatori (per esempio %1$simportando nuovi log visitatori%2$s nel passato) e vuoi che questi cambiamenti si riflettano in tutti i tuoi report.",
+        "PageDescription": "È possibile invalidare tutti i rapporti storici per un sito specifico o per tutti i siti web facendo clic sul pulsante \"Invalida rapporti storici\". In questo modo, al successivo avvio dell'archiviazione, verranno rielaborati dai registri grezzi. Forzare Matomo a rielaborare i dati storici per tutti i rapporti, ad esempio quando:",
+        "ExamplesCustomReports": "è stato creato un nuovo %1$sreport personalizzato %2$s e si desidera elaborare tutti i dati storici in esso contenuti",
+        "ExamplesFunnels": "è stato creato un nuovo %1$sFunnel %2$s e si desidera elaborare tutti i dati storici al suo interno",
+        "ExamplesRawData": "si sono modificate le informazioni grezze sui visitatori (ad esempio, %1$simportando i nuovi registri dei visitatori%2$s) e si desidera che le modifiche ai registri grezzi si riflettano in tutti i rapporti.",
         "AllWebsites": "tutti i siti",
         "AllSegments": "tutti i segmenti",
         "ChooseSegment": "Scegli segmento",
@@ -14,8 +14,8 @@
         "AllData": "tutti i dati storici",
         "XMonths": "ultimi %1$s mesi",
         "LastMonth": "ultimo mese",
-        "InvalidationSuccess": "I report sono stati invalidati con successo. Questi report verranno rielaborati la prossima volta che verrà avviata l'archiviazione.",
+        "InvalidationSuccess": "I rapporti sono stati invalidati. Verranno rielaborati la prossima volta che verrà eseguita l'archiviazione dei rapporti.",
         "InvalidateAPIReturn": "L'API CoreAdminHome.invalidateArchivedReports ha restituito:",
-        "ConfirmInvalidation": "Stai per invalidare tutti i report storici, il che causerà la rielaborazione di tutti i report storici da parte di Matomo al prossimo avvio dell'archiviazione. La rielaborazione di tutti i report storici potrebbe richiedere molto tempo al prossimo avvio dell'archiviazione. Sei sicuro di voler invalidare tutti i report storici per %1$s e %2$s?"
+        "ConfirmInvalidation": "Invalidare tutti i rapporti storici per %1$s e %2$s? (Questo fa sì che Matomo debba rielaborare tutti i rapporti storici alla successiva esecuzione dell'archiviazione e potrebbe richiedere molto tempo)."
     }
 }
