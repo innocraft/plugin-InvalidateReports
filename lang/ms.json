@@ -1,1 +1,11 @@
-{}
+{
+    "InvalidateReports": {
+        "InvalidateHistoricalReports": "Batalkan laporan sejarah",
+        "ExamplesCustomReports": "anda membuat %1$sLaporan Tersuai%2$s baharu dan ingin memproses semua data sejarah di dalamnya",
+        "AllWebsites": "semua laman web",
+        "ExamplesFunnels": "anda mencipta %1$sCorong%2$s baharu dan ingin memproses semua data sejarah di dalamnya",
+        "ExamplesRawData": "anda telah mengubah suai maklumat pelawat mentah (contohnya dengan %1$smengimport log pelawat baharu%2$s) dan mahu perubahan log mentah ini ditunjukkan dalam semua laporan anda.",
+        "InvalidateReports": "Laporan tidak sah",
+        "PageDescription": "Anda boleh membatalkan semua laporan sejarah untuk tapak web tertentu atau semua dengan mengklik butang \"Batalkan laporan sejarah\". Ini memproses semula mereka daripada log mentah pada kali seterusnya pengarkiban dijalankan. Paksa Matomo untuk memproses semula data sejarah untuk semua laporan, contohnya apabila:"
+    }
+}
