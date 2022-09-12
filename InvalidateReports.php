@@ -49,5 +49,10 @@ class InvalidateReports extends \Piwik\Plugin
         $translationKeys[] = 'InvalidateReports_InvalidateReports';
         $translationKeys[] = 'General_Segment';
         $translationKeys[] = 'General_Website';
+        $translationKeys[] = 'InvalidateReports_InvalidateHistoricalReports';
+        $translationKeys[] = 'InvalidateReports_PageDescription';
+        $translationKeys[] = 'InvalidateReports_ExamplesCustomReports';
+        $translationKeys[] = 'InvalidateReports_ExamplesFunnels';
+        $translationKeys[] = 'InvalidateReports_ExamplesRawData';
     }
 }
