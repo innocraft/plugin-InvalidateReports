@@ -41,21 +41,21 @@ export default defineComponent({
     examplesCustomReportsText() {
       return translate(
         'InvalidateReports_ExamplesCustomReports',
-        '<a href="https://piwik.org/docs/custom-reports/" target="_blank">',
+        '<a href="https://piwik.org/docs/custom-reports/" target="_blank" rel="noreferrer noopener">',
         '</a>',
       );
     },
     examplesFunnelsText() {
       return translate(
         'InvalidateReports_ExamplesFunnels',
-        '<a href="https://piwik.org/docs/funnels/" target="_blank">',
+        '<a href="https://piwik.org/docs/funnels/" target="_blank" rel="noreferrer noopener">',
         '</a>',
       );
     },
     examplesRawDataText() {
       return translate(
         'InvalidateReports_ExamplesRawData',
-        '<a href="https://piwik.org/log-analytics/" target="_blank">',
+        '<a href="https://piwik.org/log-analytics/" target="_blank" rel="noreferrer noopener">',
         '</a>',
       );
     },
