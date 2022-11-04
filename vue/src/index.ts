@@ -6,3 +6,4 @@
  */
 
 export { default as InvalidateReports } from './InvalidateReports/InvalidateReports.vue';
+export { default as InvalidateReportsPage } from './InvalidateReports/InvalidateReportsPage.vue';

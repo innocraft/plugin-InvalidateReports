@@ -126,6 +126,7 @@ __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, "InvalidateReports", function() { return /* reexport */ InvalidateReports; });
+__webpack_require__.d(__webpack_exports__, "InvalidateReportsPage", function() { return /* reexport */ InvalidateReportsPage; });
 
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
 // This file is imported into lib/wc client bundles.
@@ -366,6 +367,75 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 InvalidateReportsvue_type_script_lang_ts.render = render
 
 /* harmony default export */ var InvalidateReports = (InvalidateReportsvue_type_script_lang_ts);
+// CONCATENATED MODULE: ./node_modules/@vue/cli-plugin-babel/node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/@vue/cli-plugin-babel/node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/@vue/cli-service/node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./plugins/InvalidateReports/vue/src/InvalidateReports/InvalidateReportsPage.vue?vue&type=template&id=7d161d44
+
+var InvalidateReportsPagevue_type_template_id_7d161d44_hoisted_1 = {
+  id: "examples"
+};
+var InvalidateReportsPagevue_type_template_id_7d161d44_hoisted_2 = ["innerHTML"];
+var InvalidateReportsPagevue_type_template_id_7d161d44_hoisted_3 = ["innerHTML"];
+var InvalidateReportsPagevue_type_template_id_7d161d44_hoisted_4 = ["innerHTML"];
+function InvalidateReportsPagevue_type_template_id_7d161d44_render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_InvalidateReports = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("InvalidateReports");
+
+  var _component_ContentBlock = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("ContentBlock");
+
+  return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])(_component_ContentBlock, {
+    "content-title": _ctx.translate('InvalidateReports_InvalidateHistoricalReports'),
+    class: "invalidate-reports-page"
+  }, {
+    default: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withCtx"])(function () {
+      return [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("p", null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(_ctx.translate('InvalidateReports_PageDescription')), 1), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("ul", InvalidateReportsPagevue_type_template_id_7d161d44_hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("li", {
+        innerHTML: _ctx.$sanitize(_ctx.examplesCustomReportsText)
+      }, null, 8, InvalidateReportsPagevue_type_template_id_7d161d44_hoisted_2), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("li", {
+        innerHTML: _ctx.$sanitize(_ctx.examplesFunnelsText)
+      }, null, 8, InvalidateReportsPagevue_type_template_id_7d161d44_hoisted_3), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("li", {
+        innerHTML: _ctx.$sanitize(_ctx.examplesRawDataText)
+      }, null, 8, InvalidateReportsPagevue_type_template_id_7d161d44_hoisted_4)]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_InvalidateReports, {
+        "available-ranges": _ctx.availableRanges
+      }, null, 8, ["available-ranges"])];
+    }),
+    _: 1
+  }, 8, ["content-title"]);
+}
+// CONCATENATED MODULE: ./plugins/InvalidateReports/vue/src/InvalidateReports/InvalidateReportsPage.vue?vue&type=template&id=7d161d44
+
+// CONCATENATED MODULE: ./node_modules/@vue/cli-plugin-typescript/node_modules/cache-loader/dist/cjs.js??ref--14-0!./node_modules/babel-loader/lib!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader??ref--14-2!./node_modules/@vue/cli-service/node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./plugins/InvalidateReports/vue/src/InvalidateReports/InvalidateReportsPage.vue?vue&type=script&lang=ts
+
+
+
+/* harmony default export */ var InvalidateReportsPagevue_type_script_lang_ts = (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["defineComponent"])({
+  props: {
+    availableRanges: {
+      type: [Object, Array],
+      required: true
+    }
+  },
+  components: {
+    InvalidateReports: InvalidateReports,
+    ContentBlock: external_CoreHome_["ContentBlock"]
+  },
+  computed: {
+    examplesCustomReportsText: function examplesCustomReportsText() {
+      return Object(external_CoreHome_["translate"])('InvalidateReports_ExamplesCustomReports', '<a href="https://piwik.org/docs/custom-reports/" target="_blank" rel="noreferrer noopener">', '</a>');
+    },
+    examplesFunnelsText: function examplesFunnelsText() {
+      return Object(external_CoreHome_["translate"])('InvalidateReports_ExamplesFunnels', '<a href="https://piwik.org/docs/funnels/" target="_blank" rel="noreferrer noopener">', '</a>');
+    },
+    examplesRawDataText: function examplesRawDataText() {
+      return Object(external_CoreHome_["translate"])('InvalidateReports_ExamplesRawData', '<a href="https://piwik.org/log-analytics/" target="_blank" rel="noreferrer noopener">', '</a>');
+    }
+  }
+}));
+// CONCATENATED MODULE: ./plugins/InvalidateReports/vue/src/InvalidateReports/InvalidateReportsPage.vue?vue&type=script&lang=ts
+ 
+// CONCATENATED MODULE: ./plugins/InvalidateReports/vue/src/InvalidateReports/InvalidateReportsPage.vue
+
+
+
+InvalidateReportsPagevue_type_script_lang_ts.render = InvalidateReportsPagevue_type_template_id_7d161d44_render
+
+/* harmony default export */ var InvalidateReportsPage = (InvalidateReportsPagevue_type_script_lang_ts);
 // CONCATENATED MODULE: ./plugins/InvalidateReports/vue/src/index.ts
 /*!
  * Matomo - free/libre analytics platform
@@ -373,6 +443,7 @@ InvalidateReportsvue_type_script_lang_ts.render = render
  * @link https://matomo.org
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
+
 
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib-no-default.js
 
