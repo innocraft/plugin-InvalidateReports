@@ -4,7 +4,7 @@
         "InvalidateHistoricalReports": "Historische Berichte zurücksetzen",
         "PageDescription": "Sie können alle historischen Berichte für eine spezifische Webseite zurücksetzen, oder für alle Webseiten, durch klicken auf den Button \"Historische Berichte zurücksetzen\". Wenn Sie die historischen Berichte zurücksetzen, werden sie bei der nächsten Archivierung aus den Rohdaten neu generiert. Das ist sinnvoll wenn Sie Matomo dazu bringen wollen, die historischen Daten für alle Berichte neu zu generieren, zum Beispiel wenn:",
         "ExamplesCustomReports": "Sie haben einen neuen %1$sbenutzerdefinierten Bericht%2$s und möchten alle historischen Daten dafür verarbeiten lassen",
-        "ExamplesFunnels": "Sie haben einen neuen %1$sTrichter%2$s erstellt und möchten Ihre %1$sTrichter%2$s Berichte für alle historischen Daten neu generieren",
+        "ExamplesFunnels": "Sie haben einen neuen %1$sFunnel%2$s erstellt und möchten alle historischen Daten darin verarbeiten",
         "ExamplesRawData": "Sie haben die Rohdaten der Besucher verändert (zum Beispiel durch %1$sImportieren von Besucher-Logs%2$s) und möchten, dass diese Rohdatenänderungen in allen Ihren Berichten berücksichtigt werden.",
         "AllWebsites": "alle Webseiten",
         "AllSegments": "alle Segmente",
