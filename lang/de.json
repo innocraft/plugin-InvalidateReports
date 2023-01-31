@@ -2,19 +2,19 @@
     "InvalidateReports": {
         "InvalidateReports": "Berichte als ungültig markieren",
         "InvalidateHistoricalReports": "Historische Berichte zurücksetzen",
-        "PageDescription": "Sie können alle historischen Berichte für eine spezifische Webseite zurücksetzen, oder für alle Webseiten, durch klicken auf den Button \"Historische Berichte zurücksetzen\". Wenn Sie die historischen Berichte zurücksetzen, werden sie bei der nächsten Archivierung aus den Rohdaten neu generiert. Das ist sinnvoll wenn Sie Matomo dazu bringen wollen, die historischen Daten für alle Berichte neu zu generieren, zum Beispiel wenn:",
+        "PageDescription": "Sie können alle historischen Berichte für eine spezifische oder alle Webseiten zurücksetzen, in dem Sie den Button \"Historische Berichte zurücksetzen\" betätigen. Dadurch werden die Log-Rohdaten bei der nächsten Archivierung neu interpretiert. Zwingen Sie Matomo dazu, die historischen Daten für alle Berichte neu zu generieren, zum Beispiel wenn:",
         "ExamplesCustomReports": "Sie haben einen neuen %1$sbenutzerdefinierten Bericht%2$s und möchten alle historischen Daten dafür verarbeiten lassen",
-        "ExamplesFunnels": "Sie haben einen neuen %1$sTrichter%2$s erstellt und möchten Ihre %1$sTrichter%2$s Berichte für alle historischen Daten neu generieren",
+        "ExamplesFunnels": "Sie haben einen neuen %1$sFunnel%2$s erstellt und möchten alle historischen Daten darin verarbeiten",
         "ExamplesRawData": "Sie haben die Rohdaten der Besucher verändert (zum Beispiel durch %1$sImportieren von Besucher-Logs%2$s) und möchten, dass diese Rohdatenänderungen in allen Ihren Berichten berücksichtigt werden.",
         "AllWebsites": "alle Webseiten",
         "AllSegments": "alle Segmente",
         "ChooseSegment": "Segment auswählen",
-        "ChooseWebsite": "Website wählen",
+        "ChooseWebsite": "Webseite wählen",
         "ChooseRange": "Wählen Sie wie weit zurück die Daten annulliert werden sollen",
         "AllData": "alle historischen Daten",
         "XMonths": "letzten %1$s Monate",
         "LastMonth": "letzter Monat",
-        "InvalidationSuccess": "Berichte erfolgreich zurückgesetzt. Diese Berichte werden neu generiert, wenn die Berichtarchivierung das nächste Mal durchgeführt wird.",
+        "InvalidationSuccess": "Berichte wurden zurückgesetzt. Diese werden bei der nächsten Berichtarchivierung neu generiert.",
         "InvalidateAPIReturn": "Die CoreAdminHome.invalidateArchivedReports API antwortete:",
         "ConfirmInvalidation": "Alle historischen Berichte für %1$s und %2$s wiederaufbereiten? (Dies führt dazu, dass Matomo bei der nächsten Archivierung alle historischen Berichte neu verarbeitet, was sehr lange dauern kann.)"
     }
