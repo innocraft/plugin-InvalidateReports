@@ -2,10 +2,10 @@
     "InvalidateReports": {
         "InvalidateReports": "Invalidar relatórios",
         "InvalidateHistoricalReports": "Invalidar relatórios históricos",
-        "PageDescription": "Pode invalidar todos os relatórios históricos para um site específico ou para todos os sites, clicando no botão \"Invalidade relatórios históricos\". Quando invalida relatórios históricos, estes serão reprocessados dos registos em bruto da próxima vez que o processo de arquivamento ocorrer. Isto é útil caso queira forçar o Matomo a reprocessar dados históricos para todos os relatórios, por exemplo quando:",
+        "PageDescription": "Você pode invalidar todos os relatórios históricos de um site específico ou de todos os sites clicando no botão \"Invalidar relatórios históricos\". Isso os reprocessa dos logs brutos na próxima vez que o arquivamento for executado. Force o Matomo a reprocessar os dados históricos de todos os relatórios, por exemplo, quando:",
         "ExamplesCustomReports": "você criou um novo %1$sRelatório personalizado%2$s e deseja processar todos os dados históricos nele",
         "ExamplesFunnels": "você criou um novo %1$sFunil%2$s e deseja processar todos os dados históricos nele",
-        "ExamplesRawData": "modificou a informação em bruto dos visitantes (por exemplo, %1$simportando novos registos de visitantes%2$s no passado) e pretende que estas alterações aos registos em bruto se reflitam em todos os seus relatórios.",
+        "ExamplesRawData": "você modificou as informações brutas do visitante (por exemplo, %1$simportando novos logs de visitantes%2$s) e deseja que essas alterações brutas de log sejam refletidas em todos os seus relatórios.",
         "AllWebsites": "todos os sites",
         "AllSegments": "todos os segmentos",
         "ChooseSegment": "Escolher segmento",
@@ -14,7 +14,7 @@
         "AllData": "todos o histórico de dados",
         "XMonths": "últimos %1$s meses",
         "LastMonth": "último mês",
-        "InvalidationSuccess": "Os relatórios foram invalidados com sucesso. Estes relatórios serão reprocessados da próxima vez que o processo de arquivamento for executado.",
+        "InvalidationSuccess": "Os relatórios foram invalidados. Eles serão reprocessados na próxima vez que o arquivamento de relatórios for executado.",
         "InvalidateAPIReturn": "A API CoreAdminHome.invalidateArchivedReports devolveu:",
         "ConfirmInvalidation": "Invalidar todos os relatórios históricos de %1$s e %2$s? (Isso faz com que Matomo reprocesse todos os relatórios históricos na próxima vez que o arquivamento for executado, e isso pode levar muito tempo.)"
     }
