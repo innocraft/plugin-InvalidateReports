@@ -1,6 +1,6 @@
 {
     "InvalidateReports": {
-        "InvalidateReports": "Markeer rapporten als ongeldig.",
+        "InvalidateReports": "Markeer rapporten als ongeldig",
         "InvalidateHistoricalReports": "Maak historische rapporten ongeldig",
         "PageDescription": "U kunt alle historische rapporten voor een specifieke of alle websites ongeldig maken door op de knop \"Historische rapporten ongeldig\" te klikken. Deze worden opnieuw verwerkt vanuit de onbewerkte logboeken de eerstvolgende keer dat archivering uitgevoerd wordt. Forceer Matomo om de historische data van alle rapporten te herwerken, bijvoorbeeld wanneer:",
         "ExamplesCustomReports": "u maakte een nieuw %1$saangepast rapport%2$s en wenst alle historische gegevens erin te verwerken",
