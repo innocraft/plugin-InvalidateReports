@@ -1,9 +1,9 @@
 {
     "InvalidateReports": {
-        "InvalidateReports": "Markeer rapporten als ongeldig.",
+        "InvalidateReports": "Markeer rapporten als ongeldig",
         "InvalidateHistoricalReports": "Maak historische rapporten ongeldig",
-        "PageDescription": "Je kunt alle historische rapporten voor een specifieke website of voor alle websites ongeldig maken door op de knop \"Historische rapporten ongeldig\" te klikken. Wanneer je historische rapporten ongeldig maakt, worden deze opnieuw verwerkt vanuit de onbewerkte logboeken de volgende keer dat archivering wordt uitgevoerd. Dit is handig wanneer je Matomo wilt dwingen historische gegevens voor alle rapporten opnieuw te verwerken, bijvoorbeeld wanneer:",
-        "ExamplesCustomReports": "je hebt een nieuw %1$s maatwerk rapport %2$s en wil dat het %1$s maatwerk rapport %2$s wordt verwerkt voor alle historische gegevens",
+        "PageDescription": "U kunt alle historische rapporten voor een specifieke of alle websites ongeldig maken door op de knop \"Historische rapporten ongeldig\" te klikken. Deze worden opnieuw verwerkt vanuit de onbewerkte logboeken de eerstvolgende keer dat archivering uitgevoerd wordt. Forceer Matomo om de historische data van alle rapporten te herwerken, bijvoorbeeld wanneer:",
+        "ExamplesCustomReports": "u maakte een nieuw %1$saangepast rapport%2$s en wenst alle historische gegevens erin te verwerken",
         "AllWebsites": "alle websites",
         "AllSegments": "alle segmenten",
         "ChooseSegment": "Kies segment",
@@ -12,6 +12,10 @@
         "AllData": "Alle historische data",
         "XMonths": "Laatste %1$s maanden",
         "LastMonth": "vorige maand",
-        "InvalidateAPIReturn": "De CoreAdminHome.invalidateArchivedReports API gaf terug:"
+        "InvalidateAPIReturn": "De CoreAdminHome.invalidateArchivedReports API gaf terug:",
+        "ExamplesFunnels": "u maakte een nieuwe %1$sTrechter%2$s en wenst alle historische gegevens erin te verwerken",
+        "ExamplesRawData": "u heeft de ruwe bezoekersinformatie gewijzigd (bijvoorbeeld door %1$shet importeren van nieuw bezoekerslogboeken%2$s) en wenst deze ruwe logboekaanpassingen op te nemen in al uw rapporten.",
+        "InvalidationSuccess": "De rapporten zijn ongeldig gemaakt. Ze zullen herwerkt worden bij de eerstvolgende archivering.",
+        "ConfirmInvalidation": "Alle historische rapporten ongeldig maken voor %1$s en %2$s? (Dit veroorzaakt het herwerken van alle historische rapporten door Matomo bij de eerstvolgende archivering, en dat kan een lange tijd duren.)"
     }
 }
