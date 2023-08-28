@@ -16,6 +16,6 @@
         "LastMonth": "förra månaden",
         "InvalidationSuccess": "Rapporter har lyckats invalideras. De kommer att bearbetas nästa gång rapportarkiverings-funktionen körs.",
         "InvalidateAPIReturn": "CoreAdminHome.invalidateArchivedReports API svarar med:",
-        "ConfirmInvalidation": "Du håller på att ogiltigförklara alla historiska rapporter, vilket kommer att få Matomo att bearbeta alla historiska rapporter igen nästa gång arkivering körs. Återprocessering av alla historiska rapporter kan ta lång tid nästa gång arkivering körs. Är du säker på att du vill ogiltigförklara alla historiska rapporter för %1$s och %2$s?"
+        "ConfirmInvalidation": "Invalidera alla historiska rapporter för %1$s och %2$s? (Det får Matomo att återbearbeta alla historiska rapporter nästa gång arkiveringen körs och det kan ta lång tid att slutföra.)"
     }
 }
