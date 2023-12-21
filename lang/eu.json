@@ -1,6 +1,13 @@
 {
     "InvalidateReports": {
-        "ChooseSegment": "Segmentua aukeratu",
-        "ChooseWebsite": "Aukeratu webgunea"
+        "ChooseSegment": "Aukeratu segmentua",
+        "ChooseWebsite": "Aukeratu webgunea",
+        "InvalidateReports": "Baliogabetu txostenak",
+        "AllData": "datu historiko guztiak",
+        "LastMonth": "azken hilabetea",
+        "XMonths": "azken %1$s hilabeteak",
+        "AllSegments": "segmentu guztiak",
+        "AllWebsites": "webgune guztiak",
+        "InvalidateHistoricalReports": "Baliogabetu txosten historikoak"
     }
 }
