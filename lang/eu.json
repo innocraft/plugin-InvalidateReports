@@ -8,6 +8,7 @@
         "XMonths": "azken %1$s hilabeteak",
         "AllSegments": "segmentu guztiak",
         "AllWebsites": "webgune guztiak",
-        "InvalidateHistoricalReports": "Baliogabetu txosten historikoak"
+        "InvalidateHistoricalReports": "Baliogabetu txosten historikoak",
+        "ExamplesFunnels": "%1$sInbutu%2$s berri bat sortu duzu eta bertako datu historiko guztiak prozesatu nahi dituzu"
     }
 }
