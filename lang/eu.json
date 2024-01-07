@@ -8,6 +8,14 @@
         "XMonths": "azken %1$s hilabeteak",
         "AllSegments": "segmentu guztiak",
         "AllWebsites": "webgune guztiak",
-        "InvalidateHistoricalReports": "Baliogabetu txosten historikoak"
+        "InvalidateHistoricalReports": "Baliogabetu txosten historikoak",
+        "ExamplesFunnels": "%1$sInbutu%2$s berri bat sortu duzu eta bertako datu historiko guztiak prozesatu nahi dituzu",
+        "PageDescription": "Webgune zehatz baten edo guztien txosten historiko guztiak baliogabetu ditzakezu \"Baliogabetu txosten historikoak\" botoian klik eginez. Honek berriz prozesatzen ditu egunkari gordinetatik artxibatzea exekutatzen den hurrengo aldian. Behartu Matomo txosten guztien datu historikoak berriz prozesatzera, adibidez kasu hauetan:",
+        "ExamplesCustomReports": "%1$sTxosten pertsonalizatu%2$s berri bat sortu duzu eta bertako datu historiko guztiak prozesatu nahi dituzu",
+        "ConfirmInvalidation": "%1$s eta %2$s(r)en txosten historiko guztiak baliogabetu? (Honek eragingo du Matomok txosten historiko guztiak berriz prozesatzea artxibatzea exekutatzen den hurrengo aldian, eta baliteke denbora asko behar izatea.)",
+        "ExamplesRawData": "bisitari informazioa gordina aldatu duzu (adibidez %1$sbisitarien egunkari berriak inportatu%2$s dituzu) eta egunkari gordin horien aldaketek txostenetan eragina izatea nahi duzu.",
+        "InvalidationSuccess": "Txostenak baliogabetu dira. Berriz prozesatuko dira txostenak artxibatzea hurrengo aldian exekutatzen denean.",
+        "ChooseRange": "Aukeratu zein dataraino baliogabetu nahi dituzun datuak",
+        "InvalidateAPIReturn": "CoreAdminHome.invalidateArchivedReports API metodoak hau itzuli du:"
     }
 }
