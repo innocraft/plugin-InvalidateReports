@@ -66,6 +66,7 @@ jobs:
       - name: running tests
         uses: matomo-org/github-action-tests@main
         with:
+          testomatio: ${{ secrets.TESTOMATIO }}
           plugin-name: 'InvalidateReports'
           matomo-test-branch: 'maximum_supported_matomo'
           test-type: 'UI'
