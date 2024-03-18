@@ -18,5 +18,6 @@
   "support": {
     "issues": "https://github.com/innocraft/plugin-InvalidateReports/issues",
     "source": "https://github.com/innocraft/plugin-InvalidateReports"
-  }
+  },
+  "category": "insights"
 }
