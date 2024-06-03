@@ -5,7 +5,7 @@
         "PageDescription": "Vous pouvez invalider tous les rapports historiques pour un ou tous les sites Web en cliquant sur le bouton \"Invalider les rapports historiques\". Cela les retraite à partir des journaux bruts lors de la prochaine exécution de l'archivage. Forcer Matomo à retraiter les données historiques pour tous les rapports, par exemple lorsque :",
         "ExamplesCustomReports": "vous avez créé un nouveau %1$srapport personnalisé%2$s et souhaitez traiter toutes les données historiques qu'il contient",
         "ExamplesFunnels": "vous avez créé un nouveau %1$sFunnel%2$s et souhaitez traiter toutes les données historiques qu'il contient",
-        "ExamplesRawData": "vous avez modifié les informations brutes sur les visiteurs (par exemple en %1$simportant de nouveaux journaux de visiteurs%2$s) et souhaitez que ces modifications brutes des journaux soient reflétées dans tous vos rapports.",
+        "ExamplesRawData": "vous avez modifié les infos brutes sur les visiteurs (par exemple en %1$simportant de nouveaux journaux de visiteurs%2$s) et souhaitez que ces modifications brutes des journaux soient reflétées dans tous vos rapports.",
         "AllWebsites": "tous les sites web",
         "AllSegments": "tous les segments",
         "ChooseSegment": "Sélectionner segment",
