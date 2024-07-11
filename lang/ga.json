@@ -1,5 +1,21 @@
 {
     "InvalidateReports": {
-        "ChooseWebsite": "Roughnaigh website"
+        "ChooseWebsite": "Roughnaigh website",
+        "AllSegments": "gach deighleog",
+        "InvalidateReports": "Tuarascálacha neamhbhailí",
+        "InvalidateHistoricalReports": "Tuairiscí stairiúla a neamhbhailiú",
+        "ChooseSegment": "Roghnaigh deighleog",
+        "AllWebsites": "gach láithreán gréasáin",
+        "ChooseRange": "Roghnaigh cé chomh fada siar le sonraí a neamhbhailiú",
+        "XMonths": "%1$s mí anuas",
+        "LastMonth": "an mhí seo caite",
+        "InvalidateAPIReturn": "Cuireadh an API CoreAdminHome.invalidateArchivedReports ar ais:",
+        "InvalidationSuccess": "Tá tuairiscí neamhbhailí. Déanfar iad a athphróiseáil an chéad uair eile tuarascálacha cartlainne.",
+        "PageDescription": "Is féidir leat gach tuairisc stairiúil do shuíomh Gréasáin ar leith nó do gach suíomh Gréasáin a neamhbhailíochtú trí chliceáil ar an gcnaipe “Neamhbhailí tuarascálacha stairiúla”. Déanann sé seo iad a athphróiseáil ó na logaí amh an chéad uair eile a ritheann an chartlannú. Cuir iallach ar Matomo sonraí stairiúla a athphróiseáil le haghaidh gach tuairisce, mar shampla nuair:",
+        "ExamplesCustomReports": "chruthaigh tú %1$s Tuairisc Chustaim%2$s nua agus ba mhaith leat na sonraí stairiúla go léir a phróiseáil ann",
+        "ExamplesRawData": "d'athraigh tú an t-amhfhaisnéis cuairteora (mar shampla trí %1$s logaí cuairteora nua a iompórtáil%2$s) agus ba mhaith leat na hathruithe loga amh a léiriú i do thuairiscí go léir.",
+        "ExamplesFunnels": "chruthaigh tú %1$sTonnadóir%2$s nua agus ba mhaith leat na sonraí stairiúla go léir a phróiseáil ann",
+        "AllData": "na sonraí stairiúla go léir",
+        "ConfirmInvalidation": "An bhfuil fonn ort gach tuairisc stairiúil do %1$s agus %2$s a neamhbhailiú? (Bíonn sé seo ina chúis le Matomo chun na tuairiscí stairiúla go léir a athphróiseáil an chéad uair eile a ritheann an chartlannú, agus d’fhéadfadh go dtógfadh sé tamall fada.)"
     }
 }
