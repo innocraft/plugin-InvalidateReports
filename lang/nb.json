@@ -14,7 +14,7 @@
         "ExamplesRawData": "du har endret rå besøksinfo (for eksempel ved å %1$simportere nye besøkslogger%2$s) og ønsker å utføre disse endringene for rå-loggene i alle rapportene dine.",
         "InvalidateAPIReturn": "CoreAdminHome.invalidateArchivedReports-API-et svarte med følgende:",
         "InvalidationSuccess": "Rapporter har blitt invalidisert. De vil bli behandlet igjen neste gang rapport-arkivering kjører.",
-        "ExamplesFunnels": "Du har opprettet en ny %1$strakt%2$s og ønsker å sende all historisk data gjennom den%1$s",
+        "ExamplesFunnels": "Du har opprettet en ny %1$strakt%2$s og ønsker å sende all historisk data gjennom den",
         "PageDescription": "Du kan invalidere alle historiske rapporter eller alle nettsider ved å klikke «Invalider historiske rapporter»-knappen. Dette gjenbehandler dem fra rå-loggene neste gang arkivering kjøres. Tving Matomo til å behandle historiske data igjen for alle data, for eksempel når:",
         "ConfirmInvalidation": "Invalider alle historiske rapporter for %1$s og %2$s? (Dette får Matomo til å re-behandle alle historiske rapporter neste gang arkivering kjører, og det kan ta lang tid.)"
     }
