@@ -1,4 +1,5 @@
 <?php
+
 /**
  * InnoCraft - the company of the makers of Piwik Analytics, the free/libre analytics platform
  *
