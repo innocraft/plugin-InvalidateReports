@@ -14,8 +14,8 @@
         "AllData": "toutes les données historiques",
         "XMonths": "dernier (s) %1$smois",
         "LastMonth": "mois dernier",
-        "InvalidationSuccess": "Les rapports ont été invalidés avec succès. Ces rapports seront traités à nouveau la prochaine fois que l'archivage des rapports sera exécuté.",
+        "InvalidationSuccess": "Les rapports ont été invalidés. Ils seront traités à nouveau lors de la prochaine exécution de l'archivage des rapports.",
         "InvalidateAPIReturn": "CoreAdminHome.invalidateArchivedReports a retourné :",
-        "ConfirmInvalidation": "Vous êtes sur le point d'invalider tous les rapports existants, ce qui entraînera Matomo à analyser tous les rapports à nouveau la prochaine fois que l'archivage s'exécutera. Ré-analyser tous les rapports pourrait prendre beaucoup de temps là prochaine fois que l'archivage des rapports s'exécutera. Êtes-vous sûr(e) de vouloir invalider l'ensemble des rapports pour %1$s et %2$s ?"
+        "ConfirmInvalidation": "Invalide tous les rapports historiques pour %1$s et %2$s ? (Cela amène Matomo à retraiter tous les rapports historiques lors de la prochaine exécution de l'archivage, et cela peut prendre beaucoup de temps.)"
     }
 }
