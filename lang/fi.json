@@ -10,7 +10,12 @@
         "AllData": "kaikki historiatieto",
         "XMonths": "edelliset %1$s kuukautta",
         "LastMonth": "edellinen kuukausi",
-        "InvalidationSuccess": "Raportit on mitätöity onnistuneesti. Nämä raportit käsitellään uudelleen, kun raporttien arkistointi suoritetaan seuraavan kerran.",
-        "InvalidateAPIReturn": "CoreAdminHome.invalidateArchivedReports-API palautti:"
+        "InvalidationSuccess": "Raportit on mitätöity. Ne käsitellään uudelleen seuraavan kerran, kun raportteja arkistoidaan.",
+        "InvalidateAPIReturn": "CoreAdminHome.invalidateArchivedReports-API palautti:",
+        "PageDescription": "Voit mitätöidä kaikki tietyn tai kaikkien verkkosivustojen historialliset raportit napsauttamalla \"Mitätöi historialliset raportit\" -painiketta. Tämä käsittelee ne uudelleen raakalokeista seuraavan arkistointikerran yhteydessä. Pakota Matomo käsittelemään uudelleen kaikkien raporttien historiatiedot esimerkiksi silloin, kun:",
+        "ExamplesCustomReports": "loit uuden %1$smukautetun raportin%2$s ja haluat käsitellä kaikki siinä olevat historiatiedot",
+        "ExamplesFunnels": "loit uuden %1$sFunnel%2$s ja haluat käsitellä kaikki siinä olevat historiatiedot",
+        "ExamplesRawData": "Olet muokannut raakatietoja vierailijoista (esimerkiksi %1$stuomalla uusia vierailijoiden lokeja%2$s) ja haluat näiden raakalokien muutosten näkyvän kaikissa raporteissasi.",
+        "ConfirmInvalidation": "Mitätöidäänkö kaikki historialliset raportit kohteille %1$s ja %2$s? (Tämä saa Matomon käsittelemään kaikki historialliset raportit uudelleen seuraavan arkistointikerran yhteydessä, ja se voi kestää kauan.)"
     }
 }
