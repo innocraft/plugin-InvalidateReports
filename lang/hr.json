@@ -1,6 +1,7 @@
 {
     "InvalidateReports": {
+        "AllWebsites": "sve web-stranice",
         "ChooseSegment": "Odaberi segment",
-        "ChooseWebsite": "Odaberite internet stranicu"
+        "ChooseWebsite": "Odaberi web-stranicu"
     }
 }
