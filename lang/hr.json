@@ -1,7 +1,21 @@
 {
     "InvalidateReports": {
+        "AllData": "svi povijesni podaci",
+        "AllSegments": "sve segmente",
         "AllWebsites": "sve web-stranice",
+        "ChooseRange": "Odaberi koliko daleko unatrag želiš poništiti podatke",
         "ChooseSegment": "Odaberi segment",
-        "ChooseWebsite": "Odaberi web-stranicu"
+        "ChooseWebsite": "Odaberi web-stranicu",
+        "ConfirmInvalidation": "Poništiti sve povijesne izvještaje za %1$s i %2$s? (Ovo će prouzročiti da će Matomo ponovo obradi sve povijesne izvještaje prilikom sljedećeg pokretanja arhiviranja, što može potrajati.)",
+        "ExamplesCustomReports": "si stvorio/la novi %1$sPrilagođeni izvještaj%2$s i želiš da se u njemu obrade svi povijesni podaci",
+        "ExamplesFunnels": "si stvorio/la novi %1$sTok%2$s i želiš da se u njemu obrade svi povijesni podaci",
+        "ExamplesRawData": "si promijenio/la neobrađene podatke o posjetiteljima (na primjer %1$suvozom novih zapisa o posjetiteljima%2$s) i želiš da se ove promjene neobrađenih zapisa odraze u svim tvojim izvještajima.",
+        "InvalidateAPIReturn": "CoreAdminHome.invalidateArchivedReports API je odgovorio:",
+        "InvalidateHistoricalReports": "Poništi povijesne izvještaje",
+        "InvalidateReports": "Poništi izvještaje",
+        "InvalidationSuccess": "Izvještaji su poništeni. Ponovo će se obraditi prilikom sljedećeg pokretanja arhiviranja izvještaja.",
+        "LastMonth": "zadnji mjesec",
+        "PageDescription": "Može poništiti sve povijesne izvještaje za određenu ili sve web-stranice klikom na gumb „Poništi povijesna izvještaje”. Time će se izvještaji ponovo obraditi iz neobrađenih zapisa prilikom sljedećeg pokretanja arhiviranja. Prisili Matomo da ponovo obradi povijesne podatke za sve izvještaje, na primjer kada:",
+        "XMonths": "zadnjih %1$s mjeseca"
     }
 }
