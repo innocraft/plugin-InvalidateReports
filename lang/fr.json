@@ -1,21 +1,21 @@
 {
     "InvalidateReports": {
-        "InvalidateReports": "Invalider les rapports",
-        "InvalidateHistoricalReports": "Invalider les rapports historiques",
-        "PageDescription": "Vous pouvez invalider tous les rapports historiques pour un site spécifique, ou pour tous les sites web, en cliquant sur le bouton \"Invalider les rapports historiques\". Cela relance leur calcul à partir des données brutes lors de l'exécution du prochain archivage. Cela force Matomo à analyser de nouveau les données historiques pour tous les rapports, par exemple quand:",
+        "AllData": "toutes les données historiques",
+        "AllSegments": "tous les segments",
+        "AllWebsites": "tous les sites web",
+        "ChooseRange": "Sélectionnez la longueur de la période sur laquelle invalider les données",
+        "ChooseSegment": "Sélectionner segment",
+        "ChooseWebsite": "Sélectionnez le site web",
+        "ConfirmInvalidation": "Invalide tous les rapports historiques pour %1$s et %2$s ? (Cela amène Matomo à retraiter tous les rapports historiques lors de la prochaine exécution de l'archivage, et cela peut prendre beaucoup de temps.)",
         "ExamplesCustomReports": "vous avez créé un nouveau %1$srapport personnalisé%2$s et souhaitez traiter toutes les données historiques qu'il contient",
         "ExamplesFunnels": "vous avez créé un nouveau %1$sFunnel%2$s et souhaitez traiter toutes les données historiques qu'il contient",
         "ExamplesRawData": "vous avez modifié les infos brutes sur les visiteurs (par exemple en %1$simportant de nouveaux journaux de visiteurs%2$s) et souhaitez que ces modifications brutes des journaux soient reflétées dans tous vos rapports.",
-        "AllWebsites": "tous les sites web",
-        "AllSegments": "tous les segments",
-        "ChooseSegment": "Sélectionner segment",
-        "ChooseWebsite": "Sélectionnez le site web",
-        "ChooseRange": "Sélectionnez la longueur de la période sur laquelle invalider les données",
-        "AllData": "toutes les données historiques",
-        "XMonths": "dernier (s) %1$smois",
-        "LastMonth": "mois dernier",
+        "InvalidateAPIReturn": "CoreAdminHome.invalidateArchivedReports a retourné :",
+        "InvalidateHistoricalReports": "Invalider les rapports historiques",
+        "InvalidateReports": "Invalider les rapports",
         "InvalidationSuccess": "Les rapports ont été invalidés. Ils seront traités à nouveau lors de la prochaine exécution de l'archivage des rapports.",
-        "InvalidateAPIReturn": "CoreAdminHome.invalidateArchivedReports a retourné :",
-        "ConfirmInvalidation": "Invalide tous les rapports historiques pour %1$s et %2$s ? (Cela amène Matomo à retraiter tous les rapports historiques lors de la prochaine exécution de l'archivage, et cela peut prendre beaucoup de temps.)"
+        "LastMonth": "mois dernier",
+        "PageDescription": "Vous pouvez invalider tous les rapports historiques pour un site spécifique, ou pour tous les sites web, en cliquant sur le bouton \"Invalider les rapports historiques\". Cela relance leur calcul à partir des données brutes lors de l'exécution du prochain archivage. Cela force Matomo à analyser de nouveau les données historiques pour tous les rapports, par exemple quand:",
+        "XMonths": "dernier (s) %1$smois"
     }
 }
