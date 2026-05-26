@@ -15,7 +15,7 @@
         "InvalidateReports": "Invalider les rapports",
         "InvalidationSuccess": "Les rapports ont été invalidés. Ils seront traités à nouveau lors de la prochaine exécution de l'archivage des rapports.",
         "LastMonth": "mois dernier",
-        "PageDescription": "Vous pouvez invalider tous les rapports historiques pour un site spécifique, ou pour tous les sites web, en cliquant sur le bouton \"Invalider les rapports historiques\". Cela relance leur calcul à partir des données brutes lors de l'exécution du prochain archivage. Cela force Matomo à analyser de nouveau les données historiques pour tous les rapports, par exemple quand:",
+        "PageDescription": "Vous pouvez invalider tous les rapports historiques pour un site spécifique, ou pour tous les sites web, en cliquant sur le bouton \"Invalider les rapports historiques\". Cela relance leur calcul à partir des données brutes lors de l'exécution du prochain archivage. Cela force Matomo à analyser de nouveau les données historiques pour tous les rapports, par exemple quand :",
         "XMonths": "dernier (s) %1$smois"
     }
 }
