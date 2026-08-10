@@ -30,8 +30,8 @@ describe("InvalidateReports", function () {
         var button = await page.jQuery('.modal.open .modal-footer a:contains(Yes)');
         await button.click();
         await page.waitForNetworkIdle();
-        // the invalidation request may still be in flight when the network goes idle
-        await page.waitForSelector('.notification-success>div');
+        // invalidating a full year of dates can outlast both the network idle and the default timeout
+        await page.waitForSelector('.notification-success>div', { timeout: 120000 });
         await page.evaluate(function(){
             $('.notification-success>div').html($('.notification-success>div').html().replace(/, 2012\-01.*/,''));
         });
