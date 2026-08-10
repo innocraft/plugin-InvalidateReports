@@ -1,5 +1,6 @@
 tests/UI/processed-ui-screenshots
 /vue/dist/demo.html
+/vue/dist/*.umd.js
 /vue/dist/*.common.js
 /vue/dist/*.map
 /vue/dist/*.development.*
