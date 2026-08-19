@@ -1,0 +1,27 @@
+name: Codex Review
+
+on:
+  # nosec — label-gated; this wrapper runs no PR code, see innocraft/github-action-tests-private review/README.md
+  pull_request_target:
+    types: [labeled]
+
+permissions:
+  contents: none
+
+# No concurrency group here on purpose: it would be claimed by every `labeled` event, before the
+# job's `if` runs, so labelling a PR with anything else cancels an in-flight review. The reusable
+# workflow carries its own group, which a skipped job never reaches.
+jobs:
+  codex-review:
+    if: ${{ github.event.label.name == 'codex-review' }}
+    uses: innocraft/github-action-tests-private/.github/workflows/codex-review.yml@main
+    permissions:
+      actions: read
+      contents: read
+      issues: write
+      pull-requests: write
+    with:
+      plugin-name: InvalidateReports
+    secrets:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      TESTS_ACCESS_TOKEN: ${{ secrets.TESTS_ACCESS_TOKEN }}
