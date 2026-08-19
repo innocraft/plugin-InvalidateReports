@@ -45,6 +45,20 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         ];
     }
 
+    public function invalidateLastMonth()
+    {
+        $siteIds = $_GET['idSites'];
+
+        Request::processRequest('CoreAdminHome.invalidateArchivedReports', [
+            'format'  => 'json',
+            'idSites' => $siteIds,
+            'period'  => 'month',
+            'dates'   => 'last1',
+        ]);
+
+        return 'Reports have been invalidated for the last month.';
+    }
+
     public function invalidateReports()
     {
         Piwik::checkUserHasSuperUserAccess();
