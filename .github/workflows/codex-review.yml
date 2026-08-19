@@ -8,10 +8,9 @@ on:
 permissions:
   contents: none
 
-concurrency:
-  group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
-  cancel-in-progress: true
-
+# No concurrency group here on purpose: it would be claimed by every `labeled` event, before the
+# job's `if` runs, so labelling a PR with anything else cancels an in-flight review. The reusable
+# workflow carries its own group, which a skipped job never reaches.
 jobs:
   codex-review:
     if: ${{ github.event.label.name == 'codex-review' }}
