@@ -1,0 +1,47 @@
+name: Local action probe
+
+# Temporary, throwaway. `pull_request` runs the workflow from the PR head, so this answers two
+# questions about the public-repository Codex review caller without merging it first: are the
+# organization secrets visible to a public repository, and can a public repository check the
+# private review actions out and run one? Delete with the PR.
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/local-action-probe.yml'
+
+permissions:
+  contents: none
+
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - name: Check secret visibility
+        env:
+          TESTS_ACCESS_TOKEN: ${{ secrets.TESTS_ACCESS_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -z "${OPENAI_API_KEY}" ]; then
+            echo "::warning::OPENAI_API_KEY is not visible to this public repository. The review would fail at the Codex step."
+          else
+            echo "OPENAI_API_KEY is visible."
+          fi
+          if [ -z "${TESTS_ACCESS_TOKEN}" ]; then
+            echo "::error::TESTS_ACCESS_TOKEN is not visible to this public repository. Scope the organization secret to it." >&2
+            exit 1
+          fi
+          echo "TESTS_ACCESS_TOKEN is visible."
+
+      - name: Checkout trusted review actions
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0
+        with:
+          repository: innocraft/github-action-tests-private
+          ref: codex-review-public-repo-support
+          token: ${{ secrets.TESTS_ACCESS_TOKEN }}
+          path: github-action-tests
+          persist-credentials: false
+
+      - name: Invoke composite action from the workspace
+        uses: ./github-action-tests/review/actions/probe
