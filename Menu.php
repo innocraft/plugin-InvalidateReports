@@ -16,6 +16,7 @@ class Menu extends \Piwik\Plugin\Menu
 {
     public function configureAdminMenu(MenuAdmin $menu)
     {
+        $test=1;
         if (Piwik::hasUserSuperUserAccess()) {
             $menu->addSystemItem(
                 'InvalidateReports_InvalidateReports',
