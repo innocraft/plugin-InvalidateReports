@@ -1,144 +1,23 @@
 name: Codex Review
 
 on:
-  # nosec — label-gated; this wrapper runs no PR code, see innocraft/github-action-tests-private review/README.md
+  # nosec — label-gated; this wrapper runs no PR code, see matomo-org/plugin-ci-workflows README.md
   pull_request_target:
     types: [labeled]
 
 permissions:
   contents: none
 
-concurrency:
-  # A workflow-level group is claimed by every `labeled` event, before any job `if` runs, so a
-  # plain group would let an unrelated label cancel an in-flight review. Give every non-trigger
-  # label its own throwaway group instead.
-  group: >-
-    ${{ github.event.label.name == 'codex-review'
-        && format('codex-review-{0}', github.event.pull_request.number)
-        || format('codex-review-untriggered-{0}', github.run_id) }}
-  cancel-in-progress: true
-
-# GitHub refuses to resolve a reusable workflow stored in a private repository from a public or
-# internal caller, and no token can grant that, so a public repository carries the job structure
-# itself and checks out the trusted review actions instead. The review logic still lives only in
-# innocraft/github-action-tests-private; keep this file in sync with its review/README.md.
-env:
-  REVIEW_REPOSITORY: innocraft/github-action-tests-private
-  REVIEW_REF: main
-
 jobs:
-  preflight:
-    if: ${{ github.event.label.name == 'codex-review' }}
-    runs-on: ubuntu-24.04
-    permissions:
-      contents: read
-      pull-requests: read
-    outputs:
-      should_run: ${{ steps.preflight.outputs.should_run }}
-      safety_failure: ${{ steps.preflight.outputs.safety_failure }}
-      safety_message: ${{ steps.preflight.outputs.safety_message }}
-      skip_reason: ${{ steps.preflight.outputs.skip_reason }}
-      skip_message: ${{ steps.preflight.outputs.skip_message }}
-      changed_files: ${{ steps.preflight.outputs.changed_files }}
-      automation_files: ${{ steps.preflight.outputs.automation_files }}
-      base_sha: ${{ steps.preflight.outputs.base_sha }}
-      head_sha: ${{ steps.preflight.outputs.head_sha }}
-    steps:
-      - name: Verify workflow assets token is configured
-        env:
-          TESTS_ACCESS_TOKEN: ${{ secrets.TESTS_ACCESS_TOKEN }}
-        run: |
-          if [ -z "${TESTS_ACCESS_TOKEN}" ]; then
-            echo "::error::TESTS_ACCESS_TOKEN secret is empty. It must hold a token with read access to ${REVIEW_REPOSITORY} so the trusted review actions can be checked out; this repository's GITHUB_TOKEN cannot read a private repository. Scope the organization secret to this repository." >&2
-            exit 1
-          fi
-
-      - name: Checkout trusted review actions
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0
-        with:
-          repository: ${{ env.REVIEW_REPOSITORY }}
-          ref: ${{ env.REVIEW_REF }}
-          token: ${{ secrets.TESTS_ACCESS_TOKEN }}
-          path: github-action-tests
-          persist-credentials: false
-
-      - name: Preflight
-        id: preflight
-        uses: ./github-action-tests/review/actions/preflight
-
-  codex:
-    needs: preflight
-    if: ${{ needs.preflight.outputs.should_run == 'true' }}
-    runs-on: ubuntu-24.04
-    timeout-minutes: 30
-    permissions:
-      contents: read
-    steps:
-      - name: Checkout trusted review actions
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0
-        with:
-          repository: ${{ env.REVIEW_REPOSITORY }}
-          ref: ${{ env.REVIEW_REF }}
-          token: ${{ secrets.TESTS_ACCESS_TOKEN }}
-          path: github-action-tests
-          persist-credentials: false
-
-      - name: Run Codex review
-        uses: ./github-action-tests/review/actions/codex
-        with:
-          openai-api-key: ${{ secrets.OPENAI_API_KEY }}
-          base-sha: ${{ needs.preflight.outputs.base_sha }}
-          head-sha: ${{ needs.preflight.outputs.head_sha }}
-          changed-files: ${{ needs.preflight.outputs.changed_files }}
-          plugin-name: InvalidateReports
-
-  post-review:
-    needs: [preflight, codex]
-    if: ${{ always() && github.event.label.name == 'codex-review' }}
-    runs-on: ubuntu-24.04
+  codex-review:
+    uses: matomo-org/plugin-ci-workflows/.github/workflows/plugin-codex-review.yml@main
     permissions:
       actions: read
       contents: read
       issues: write
       pull-requests: write
-    steps:
-      - name: Checkout trusted review actions
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0
-        with:
-          repository: ${{ env.REVIEW_REPOSITORY }}
-          ref: ${{ env.REVIEW_REF }}
-          token: ${{ secrets.TESTS_ACCESS_TOKEN }}
-          path: github-action-tests
-          persist-credentials: false
-
-      - name: Post review result
-        uses: ./github-action-tests/review/actions/post-review
-        with:
-          codex-result: ${{ needs.codex.result }}
-          preflight-result: ${{ needs.preflight.result }}
-          safety-failure: ${{ needs.preflight.outputs.safety_failure }}
-          safety-message: ${{ needs.preflight.outputs.safety_message }}
-          skip-reason: ${{ needs.preflight.outputs.skip_reason }}
-          skip-message: ${{ needs.preflight.outputs.skip_message }}
-          reviewed-base-sha: ${{ needs.preflight.outputs.base_sha }}
-          reviewed-head-sha: ${{ needs.preflight.outputs.head_sha }}
-
-  cleanup:
-    needs: [preflight, codex, post-review]
-    if: ${{ always() && github.event.label.name == 'codex-review' }}
-    runs-on: ubuntu-24.04
-    permissions:
-      issues: write
-      pull-requests: write
-    steps:
-      - name: Checkout trusted review actions
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0
-        with:
-          repository: ${{ env.REVIEW_REPOSITORY }}
-          ref: ${{ env.REVIEW_REF }}
-          token: ${{ secrets.TESTS_ACCESS_TOKEN }}
-          path: github-action-tests
-          persist-credentials: false
-
-      - name: Remove trigger label
-        uses: ./github-action-tests/review/actions/cleanup
+    with:
+      plugin-name: InvalidateReports
+    secrets:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      TESTS_ACCESS_TOKEN: ${{ secrets.TESTS_ACCESS_TOKEN }}
