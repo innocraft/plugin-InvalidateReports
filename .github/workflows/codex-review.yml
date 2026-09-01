@@ -1,20 +1,20 @@
 name: Codex Review
 
 on:
-  # nosec — label-gated; this wrapper runs no PR code, see innocraft/github-action-tests-private review/README.md
+  # nosec — label-gated; this wrapper runs no PR code, see matomo-org/plugin-ci-workflows README.md
   pull_request_target:
     types: [labeled]
 
 permissions:
   contents: none
 
-# No concurrency group here on purpose: it would be claimed by every `labeled` event, before the
-# job's `if` runs, so labelling a PR with anything else cancels an in-flight review. The reusable
-# workflow carries its own group, which a skipped job never reaches.
 jobs:
   codex-review:
+    # The shared workflow gates every one of its own jobs on this label, but it also carries a
+    # cancel-in-progress concurrency group. Without this condition an unrelated label would still
+    # instantiate it, claim that group, and cancel a review already running on this pull request.
     if: ${{ github.event.label.name == 'codex-review' }}
-    uses: innocraft/github-action-tests-private/.github/workflows/codex-review.yml@main
+    uses: matomo-org/plugin-ci-workflows/.github/workflows/plugin-codex-review.yml@main
     permissions:
       actions: read
       contents: read
