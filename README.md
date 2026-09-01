@@ -1,6 +1,6 @@
 # Matomo Invalidate Reports Plugin
 
-[![Build Status](https://github.com/innocraft/plugin-InvalidateReports/actions/workflows/matomo-tests.yml/badge.svg?branch=5.x-dev)](https://github.com/innocraft/plugin-InvalidateReports/actions/workflows/matomo-tests.yml)
+[![Build Status](https://github.com/innocraft/plugin-InvalidateReports/actions/workflows/matomo-tests.yml/badge.svg?branch=6.x-dev)](https://github.com/innocraft/plugin-InvalidateReports/actions/workflows/matomo-tests.yml)
 
 ## Description
 
