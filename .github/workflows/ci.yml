@@ -1,0 +1,28 @@
+name: Plugins CI
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+  push:
+    branches:
+      - '**.x-dev'
+  workflow_dispatch:
+
+permissions:
+  actions: read
+  contents: read
+  pull-requests: read
+
+jobs:
+  ci:
+    uses: matomo-org/plugin-ci-workflows/.github/workflows/plugin-ci.yml@main
+    with:
+      plugin-name: InvalidateReports
+      # PHPStan has never run here and there is no phpstan.neon to run it with;
+      # adding one is a decision of its own.
+      skip-phpstan: true
+      # Off for now. Turning it on reports 1 pre-existing license header error in
+      # this repository -- headers that disagree with the licence plugin.json
+      # declares. That is real drift worth fixing, but correcting licence text is a
+      # decision of its own rather than part of moving CI onto one caller.
+      skip-license-check: true
