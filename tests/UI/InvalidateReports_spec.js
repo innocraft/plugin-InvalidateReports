@@ -44,7 +44,9 @@ describe("InvalidateReports", function () {
         await page.click('.site-selection .title');
         await page.waitForNetworkIdle();
         await page.waitForSelector('.site-selection .siteSelector .mtm-dropdownPanel__menu');
-        await page.click('.site-selection .siteSelector .mtm-dropdownPanel__menu li:first-child a');
+        // only the site entries carry a title, so this skips the All Websites entry the
+        // redesigned list puts first
+        await page.click('.site-selection .siteSelector .mtm-dropdownPanel__menu li a[title]');
         await page.waitForNetworkIdle();
         await page.evaluate(function(){
             $('[name="segment"] li:nth-child(3)')[0].click();
