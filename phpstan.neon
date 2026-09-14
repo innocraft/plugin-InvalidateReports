@@ -14,8 +14,10 @@ parameters:
         # getIdSitesFromIdSitesString(), which is documented to accept a comma-separated string such
         # as '1,2,3'. The annotation is wrong rather than this call; we are its only caller.
         -
-            message: '#expects array, string given#'
+            identifier: argument.type
+            message: '#getMinMaxDateAcrossWebsites\(\) expects array, string given#'
             path: Controller.php
+            count: 1
     bootstrapFiles:
         - ../../bootstrap-phpstan.php
     universalObjectCratesClasses:
