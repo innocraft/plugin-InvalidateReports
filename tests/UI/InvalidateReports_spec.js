@@ -43,7 +43,8 @@ describe("InvalidateReports", function () {
         await page.goto("?module=InvalidateReports&action=index&idSite=1&period=day&date=yesterday");
         await page.click('.site-selection .title');
         await page.waitForNetworkIdle();
-        await page.click('.custom_select_ul_list li:first-child a');
+        await page.waitForSelector('.site-selection .siteSelector .mtm-dropdownPanel__menu');
+        await page.click('.site-selection .siteSelector .mtm-dropdownPanel__menu li:first-child a');
         await page.waitForNetworkIdle();
         await page.evaluate(function(){
             $('[name="segment"] li:nth-child(3)')[0].click();
