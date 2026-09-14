@@ -43,11 +43,17 @@ describe("InvalidateReports", function () {
         await page.goto("?module=InvalidateReports&action=index&idSite=1&period=day&date=yesterday");
         await page.click('.site-selection .title');
         await page.waitForNetworkIdle();
-        await page.click('.custom_select_ul_list li:first-child a');
+        await page.waitForSelector('.site-selection .siteSelector .mtm-dropdownPanel__menu');
+        // only the site entries carry a title, so this skips the All Websites entry the
+        // redesigned list puts first
+        await page.click('.site-selection .siteSelector .mtm-dropdownPanel__menu li a[title]');
         await page.waitForNetworkIdle();
         await page.evaluate(function(){
             $('[name="segment"] li:nth-child(3)')[0].click();
         });
+        // the segment field borders the same colour on hover as on focus, so park the cursor
+        // away from it rather than capturing whichever state the last click left behind
+        await page.mouse.move(-10, -10);
         var elem = await page.$('#content');
         expect(await elem.screenshot()).to.matchImage('select_site_and_segment');
     });
