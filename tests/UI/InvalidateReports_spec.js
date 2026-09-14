@@ -51,6 +51,9 @@ describe("InvalidateReports", function () {
         await page.evaluate(function(){
             $('[name="segment"] li:nth-child(3)')[0].click();
         });
+        // the segment field borders the same colour on hover as on focus, so park the cursor
+        // away from it rather than capturing whichever state the last click left behind
+        await page.mouse.move(-10, -10);
         var elem = await page.$('#content');
         expect(await elem.screenshot()).to.matchImage('select_site_and_segment');
     });
