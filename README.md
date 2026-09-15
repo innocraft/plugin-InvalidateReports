@@ -1,10 +1,10 @@
 # Matomo Invalidate Reports Plugin
 
-[![Build Status](https://github.com/innocraft/plugin-InvalidateReports/actions/workflows/matomo-tests.yml/badge.svg?branch=4.x-dev)](https://github.com/innocraft/plugin-InvalidateReports/actions/workflows/matomo-tests.yml)
+[![Build Status](https://github.com/innocraft/plugin-InvalidateReports/actions/workflows/matomo-tests.yml/badge.svg?branch=6.x-dev)](https://github.com/innocraft/plugin-InvalidateReports/actions/workflows/matomo-tests.yml)
 
 ## Description
 
-This plugins allows you to [invalidate historical reports](https://matomo.org/faq/how-to/faq_155/).
+This plugin allows you to [invalidate historical reports](https://matomo.org/faq/how-to/faq_155/).
 
 You can invalidate all historical reports for a specific or for all websites and for a specific or all segments. When you invalidate historical reports, they will be re-processed from the raw logs the next time archiving will run. This is useful when you want to force Matomo to re-process historical data for all reports, for example when:
 
