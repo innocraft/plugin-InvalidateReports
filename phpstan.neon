@@ -1,0 +1,28 @@
+parameters:
+    level: 5
+    phpVersion: 80100
+    tmpDir: /tmp/phpstan/InvalidateReports/main
+    paths:
+        - .
+    excludePaths:
+        - tests/*
+        # The shared workflow leaves this helper checkout in the workspace, and `paths: .`
+        # would otherwise analyse it as if it were plugin code.
+        - github-action-tests/*
+    ignoreErrors:
+        # Site::getMinMaxDateAcrossWebsites() documents `@param array`, but its first act is to call
+        # getIdSitesFromIdSitesString(), which is documented to accept a comma-separated string such
+        # as '1,2,3'. The annotation is wrong rather than this call; we are its only caller.
+        -
+            identifier: argument.type
+            message: '#getMinMaxDateAcrossWebsites\(\) expects array, string given#'
+            path: Controller.php
+            count: 1
+    bootstrapFiles:
+        - ../../bootstrap-phpstan.php
+    universalObjectCratesClasses:
+        - Piwik\Config
+        - Piwik\View
+        - Piwik\ViewDataTable\Config
+    scanDirectories:
+        - ../../

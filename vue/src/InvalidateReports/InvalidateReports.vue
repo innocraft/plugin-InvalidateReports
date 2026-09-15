@@ -73,11 +73,11 @@ import {
   NotificationsStore,
   Matomo,
   SiteSelector,
-  SiteRef,
 } from 'CoreHome';
+import type { SiteRef } from 'CoreHome';
 import { Field, SaveButton } from 'CorePluginsAdmin';
 
-interface InvalidateReportsState {
+export interface InvalidateReportsState {
   loading: boolean;
   site: SiteRef;
   segment: string;

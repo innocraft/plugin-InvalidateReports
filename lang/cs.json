@@ -1,8 +1,21 @@
 {
     "InvalidateReports": {
+        "AllData": "všechna historická data",
+        "AllSegments": "všechny segmenty",
         "AllWebsites": "všechny weby",
+        "ChooseRange": "Zvolte, jak hluboko do minulosti se mají data zneplatnit",
         "ChooseSegment": "Zvolte segment",
         "ChooseWebsite": "Zvolte web",
-        "InvalidateReports": "Reporty neplatnosti"
+        "ConfirmInvalidation": "Zneplatnit všechny historické přehledy pro %1$s a %2$s? (Matomo pak při příštím spuštění archivace znovu zpracuje všechny historické přehledy, což může trvat dlouho.)",
+        "ExamplesCustomReports": "jste vytvořili nový %1$svlastní přehled%2$s a chcete v něm zpracovat všechna historická data",
+        "ExamplesFunnels": "jste vytvořili nový %1$strychtýř%2$s a chcete v něm zpracovat všechna historická data",
+        "ExamplesRawData": "jste upravili surové údaje o návštěvnících (například %1$simportem nových protokolů návštěv%2$s) a chcete, aby se tyto změny surových protokolů promítly do všech přehledů.",
+        "InvalidateAPIReturn": "Rozhraní API CoreAdminHome.invalidateArchivedReports vrátilo:",
+        "InvalidateHistoricalReports": "Zneplatnit historické přehledy",
+        "InvalidateReports": "Reporty neplatnosti",
+        "InvalidationSuccess": "Přehledy byly zneplatněny. Znovu se zpracují při příštím spuštění archivace přehledů.",
+        "LastMonth": "poslední měsíc",
+        "PageDescription": "Kliknutím na tlačítko „Zneplatnit historické přehledy“ můžete zneplatnit všechny historické přehledy pro konkrétní web nebo pro všechny weby. Při příštím spuštění archivace se znovu zpracují ze surových protokolů. Opětovné zpracování historických dat všech přehledů v Matomo můžete vynutit například tehdy, když:",
+        "XMonths": "posledních %1$s měsíců"
     }
 }
