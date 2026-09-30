@@ -19,3 +19,4 @@ jobs:
     with:
       plugin-name: InvalidateReports
       verify-hook: true
+      timezone-regression-exempt: 'Only passes the site date range to core invalidateArchivedReports; does no timezone conversion itself'
