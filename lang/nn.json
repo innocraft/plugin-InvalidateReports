@@ -1,6 +1,21 @@
 {
     "InvalidateReports": {
+        "AllData": "alle historiske data",
+        "AllSegments": "alle segment",
+        "AllWebsites": "alle nettstader",
+        "ChooseRange": "Vel kor langt tilbake data skal gjerast ugyldige",
         "ChooseSegment": "Kies het sement",
-        "ChooseWebsite": "Vel nettside"
+        "ChooseWebsite": "Vel nettside",
+        "ConfirmInvalidation": "Vil du gjere alle historiske rapportar ugyldige for %1$s og %2$s? (Då handsamar Matomo alle historiske rapportar på nytt neste gong arkiveringa køyrer, og det kan ta lang tid.)",
+        "ExamplesCustomReports": "du har oppretta ein ny %1$seigendefinert rapport%2$s og vil handsame alle historiske data i han",
+        "ExamplesFunnels": "du har oppretta ei ny %1$strakt%2$s og vil handsame alle historiske data i henne",
+        "ExamplesRawData": "du har endra rådata om besøkande (til dømes ved å %1$simportere nye besøksloggar%2$s) og vil at endringane skal synast i alle rapportane dine.",
+        "InvalidateAPIReturn": "API-et CoreAdminHome.invalidateArchivedReports returnerte:",
+        "InvalidateHistoricalReports": "Gjer historiske rapportar ugyldige",
+        "InvalidateReports": "Gjer rapportar ugyldige",
+        "InvalidationSuccess": "Rapportane er gjorde ugyldige. Dei blir handsama på nytt neste gong rapportarkiveringa køyrer.",
+        "LastMonth": "førre månad",
+        "PageDescription": "Du kan gjere alle historiske rapportar ugyldige for éin bestemt nettstad eller alle nettstader ved å klikke på knappen «Gjer historiske rapportar ugyldige». Då blir dei handsama på nytt frå rådataloggane neste gong arkiveringa køyrer. Tving Matomo til å handsame historiske data på nytt for alle rapportar, til dømes når:",
+        "XMonths": "siste %1$s månader"
     }
 }
