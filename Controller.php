@@ -57,7 +57,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         list($minDate, $maxDate) = Site::getMinMaxDateAcrossWebsites($siteIds);
 
         if ($months > 0) {
-            $minDate = $maxDate->subMonth($months);
+            $minDate = $maxDate->subMonth((int) $months);
         }
 
         $range = new Range('day', $minDate->toString() . ',' . $maxDate->toString());
