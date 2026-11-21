@@ -1,7 +1,21 @@
 {
     "InvalidateReports": {
+        "AllData": "toate datele istorice",
+        "AllSegments": "toate segmentele",
         "AllWebsites": "toate siturile web",
+        "ChooseRange": "Alegeți cât de departe în trecut se invalidează datele",
         "ChooseSegment": "Alege segment",
-        "ChooseWebsite": "Alegeti website"
+        "ChooseWebsite": "Alegeti website",
+        "ConfirmInvalidation": "Invalidați toate rapoartele istorice pentru %1$s și %2$s? (Acest lucru face ca Matomo să reproceseze toate rapoartele istorice la următoarea rulare a arhivării, ceea ce poate dura mult.)",
+        "ExamplesCustomReports": "ați creat un nou %1$sraport personalizat%2$s și doriți să procesați în el toate datele istorice",
+        "ExamplesFunnels": "ați creat o nouă %1$spâlnie%2$s și doriți să procesați în ea toate datele istorice",
+        "ExamplesRawData": "ați modificat informațiile brute despre vizitatori (de exemplu, %1$simportând noi jurnale de vizitatori%2$s) și doriți ca aceste modificări ale jurnalelor brute să se reflecte în toate rapoartele.",
+        "InvalidateAPIReturn": "API-ul CoreAdminHome.invalidateArchivedReports a returnat:",
+        "InvalidateHistoricalReports": "Invalidare rapoarte istorice",
+        "InvalidateReports": "Invalidare rapoarte",
+        "InvalidationSuccess": "Rapoartele au fost invalidate. Vor fi reprocesate la următoarea rulare a arhivării rapoartelor.",
+        "LastMonth": "luna trecută",
+        "PageDescription": "Puteți invalida toate rapoartele istorice pentru un anumit site sau pentru toate site-urile, făcând clic pe butonul \"Invalidare rapoarte istorice\". Acestea vor fi reprocesate din jurnalele brute la următoarea rulare a arhivării. Forțați Matomo să reproceseze datele istorice pentru toate rapoartele, de exemplu atunci când:",
+        "XMonths": "ultimele %1$s luni"
     }
 }
